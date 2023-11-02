@@ -23,7 +23,9 @@ import {
     jobit,
     tripguide,
     threejs,
-    whoscore
+    whoscore,
+    kidbro,
+    sellz,
 
   } from "../assets";
   
@@ -199,7 +201,7 @@ import {
       name: "Jake Athersmith",
       designation: "CFO",
       company: "Acme Co",
-      image: "src/assets/sellz.png",
+      image: {sellz},
     },
     {
       testimonial:
@@ -207,7 +209,7 @@ import {
       name: "Andrew Smith",
       designation: "Cake Figures",
       company: "CakeFigures.com",
-      image: "src/assets/kidbro.jpg",
+      image: {kidbro}
     },
     {
       testimonial:

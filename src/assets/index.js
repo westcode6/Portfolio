@@ -32,7 +32,9 @@ import tripguide from "./tripguide.png";
 import heroMain from "./heroMain.jpg";
 import blackPattern from "./blackPattern.jpg";
 import whoscore from "./whoscore.png";
-
+import mann from "./mann.jpg";
+import kidbro from "./kidbro.jpg"
+import sellz from "./sellz.png";
 export {
   responsive,
   contentCreator,
@@ -64,5 +66,8 @@ export {
   carrent,
   jobit,
   tripguide,
-  gp2
+  gp2,
+  mann,
+  kidbro,
+  sellz
 };

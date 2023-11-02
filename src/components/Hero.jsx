@@ -3,12 +3,14 @@ import { StarsCanvas } from "./canvas";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
 import { profileLinks } from "../constants";
+import { mann } from "../assets";
 const Hero = () => {
+  const myProfile =  mann
   return (
     <>
       <div>
         {/* <StarsCanvas /> */}
-        <div className="relative">
+        <div className="relative z-0">
           <StarsCanvas />
           <div
             className={`px-4 md:px-4 py-10 mb-20 md:py-36  xl:flex-row flex-col-reverse flex w-full max-w-7xl mx-auto`}
@@ -86,7 +88,7 @@ const Hero = () => {
                   >
                     <div className="w-full md:w-80 h-72 bg-neutral-900 shadow-xl  p-4 md:mt-0 rounded-full flex items-center justify-end">
                       <img
-                        src="./src/assets/mann.jpg"
+                        src={myProfile}
                         className="w-full h-full object-cover animate-pulse rounded-full"
                         alt="my gif"
                       />
