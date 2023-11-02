@@ -68,13 +68,13 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="px-4 py-2 hidden sm:block text-xs  bg-lime-400  hover:bg-neutral-800 text-lime-900  rounded-2xl shadow-xl  transfrom duration-300  hover:scale-20">
+          <button className="px-4 py-2 hidden sm:block text-xs  bg-lime-400  hover:bg-neutral-800 text-lime-900 hover:text-lime-400  rounded-2xl shadow-xl  transfrom duration-300  hover:scale-20">
             <a
               href="https://api.whatsapp.com/send?phone=09065017306"
               className="font-medium uppercase flex items-center"
             >
             
-              <span className="p-2 rounded-full shaodow-inner bg-neutral-900 mr-3 text-lime-400 font-mono flex items-center justify-center">
+              <span className="p-2 rounded-full shaodow-inner bg-neutral-900 mr-3 text-lime-400  font-mono flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -92,7 +92,7 @@ const Navbar = () => {
               </span>{" "}
            
 
-          <span className="text-neutral-900 text-sm font-mono font-black">   Hire me</span>
+          <span className="text-sm font-mono font-black">   Hire me</span>
 
             </a>
           </button>

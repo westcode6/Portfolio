@@ -48,7 +48,7 @@ const About = () => {
         {/* <p className={`${styles.sectionSubText}`}>Introduction
 
         </p> */}
-        <h2 className={`${styles.sectionHeadText}`}><span className="underline text-lime-400 underline-offset-4">Collaborate</span> with brands and agencies to create impactful results</h2>
+        <h2 className={`${styles.sectionHeadText}`}><span className="border-b-4 border-lime-400 rounded-b-2xl px-4 shadow-xl">Collaborate</span> with brands and agencies to create impactful results</h2>
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-gray-gradient text-[16px] max-w-3xl leading-7 hidden">
