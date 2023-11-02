@@ -63,8 +63,10 @@ const Hero = () => {
                 {/* <span className="w-1 ml-1 h-1 rounded-full bg-lime-400 bg-opacity-20 animate-ping"></span> */}
                <span className="text-xs text-lime-100 animate-pulse"><i class={link.icon}></i></span>
       
-                  {link.title}
-                
+                 
+                <span className="text-xs">
+                {link.title}
+                </span>
 
                 </a>
               </li>
