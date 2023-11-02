@@ -21,7 +21,7 @@ export const ServiceCard = ({index, title, icon, desc}) => {
           scale: 1,
           speed: 450
         }}
-        className="w-full  shadow-xl border border-neutral-800 px-8 py-10 rounded-2xl flex flex-col  items-center justify-center gap-2">
+        className="w-full  shadow-xl border border-neutral-800 px-6 py-10 rounded-2xl flex flex-col  items-center justify-center gap-2">
           <img src={icon} alt={title} className="w-16 h-16 object-contain object-center" />
           <h4 className="text-white text-base font-normal mt-2">{title}</h4>
           <p className="mt-2 text-base text-neutral-400">{desc}</p>
@@ -60,7 +60,7 @@ const About = () => {
       </motion.p>
      </div>
 
-      <div className="px-4 mt-8 md:mt-24 flex flex-end justify-end flex-wrap gap-10">
+      <div className="px-2 mt-8 md:mt-24 flex flex-end justify-end flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
