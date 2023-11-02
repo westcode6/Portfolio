@@ -30,16 +30,16 @@ const ExperienceCard = ({ experience}) => (
   >
   
   <div className="w-full">
-  <div className="p-2 sm:p-3 lg:p-6">
+  <div className="sm:p-3 lg:p-6">
       <h3 className="text-white text-[24px]">{experience.title}</h3>
       <h5 className="text-base text-lime-400 font-mono font-thin mt-2">{experience.company_name}</h5>
-<div className="mt-2 pb-4 pr-2 sm:pr-6">
+<div className="mt-2 pb-4 sm:pr-6">
   
 <ul className="space-y-6">
         {experience.points.map((point, index) => (
-          <div className="flex items-center justify-start gap-4 my-2 glass-effect shadow-2xl hover:shadow-inner rounded-2xl">
+          <div className="flex items-center justify-start gap-2 my-2 bg-neutral-900 shadow-2xl hover:shadow-inner rounded-2xl">
             <span className="w-4 h-6 rounded-2xl bg-lime-600 "></span>
-              <li key={index} className="text-sm p-4 line-height-2 text-neutral-400 tracking-wide font-normal ">{point}</li>
+              <li key={index} className="text-sm p-2 line-height-2 text-neutral-400 tracking-wide font-normal ">{point}</li>
 
             {/* <span className="w-4 h-2 rounded-2xl bg-lime-400 "></span> */}
 <span />

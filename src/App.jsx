@@ -18,11 +18,14 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <div className="relative z-0">
+        <div className="">
           <div className="">
             <Navbar />
 
+            <div className="relative z-0">
             <Hero />
+              <StarsCanvas />
+            </div>
             <About />
 
             <Experience />

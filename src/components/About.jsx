@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 // Create The Service Card Component to render our services
 export const ServiceCard = ({index, title, icon, desc}) => {
   return (
-    <Tilt className="xs:w-[220px]  glass-effect w-full  rounded-xl">
+    <Tilt className="xs:w-[220px] bg-neutral-900 w-full  rounded-xl">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         // animation pattern

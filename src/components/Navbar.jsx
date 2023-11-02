@@ -68,7 +68,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="px-4 py-2 hidden sm:block text-xs  bg-lime-400  hover:bg-neutral-800 text-lime-900 hover:text-lime-400  rounded-2xl shadow-xl  transfrom duration-300  hover:scale-20">
+          <button className="px-4 py-2 hidden sm:block text-xs  bg-neutral-900  hover:bg-neutral-800 text-lime-400 hover:text-lime-400  rounded-2xl shadow-xl  transfrom duration-300  hover:scale-20">
             <a
               href="https://api.whatsapp.com/send?phone=09065017306"
               className="font-medium uppercase flex items-center"

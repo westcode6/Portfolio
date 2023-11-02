@@ -1,5 +1,5 @@
 import React from "react";
-import { StarsCanvas } from "./canvas";
+// import { StarsCanvas } from "./canvas";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
 import { profileLinks } from "../constants";
@@ -11,7 +11,7 @@ const Hero = () => {
       <div>
         {/* <StarsCanvas /> */}
         <div className="relative z-0">
-          <StarsCanvas />
+          {/* <StarsCanvas /> */}
           <div
             className={`px-4 md:px-4 py-10 mb-20 md:py-36  xl:flex-row flex-col-reverse flex w-full max-w-7xl mx-auto`}
           >
@@ -69,7 +69,7 @@ const Hero = () => {
           let's build Together
                   <span className="text-black">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+  <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
 </svg>
 
 
@@ -79,7 +79,7 @@ const Hero = () => {
                </div>
                 </div>
 
-                <div className="w-full  max-w-sm mt-5 md:flex items-center justify-center rounded-xl bg-neutral-800 bg-opacity-5">
+                <div className="w-full  max-w-sm  md:flex items-center justify-center rounded-xl bg-neutral-800 bg-opacity-5">
                   {/* Image section */}
 
                   <motion.div
@@ -89,7 +89,7 @@ const Hero = () => {
                     <div className="w-full md:w-80 h-72 bg-neutral-900 shadow-xl  p-4 md:mt-0 rounded-full flex items-center justify-end">
                       <img
                         src={myProfile}
-                        className="w-full h-full object-cover animate-pulse rounded-full"
+                        className="w-full h-full object-cover shadow-xl border-4  border-neutral-800 rounded-3xl"
                         alt="my gif"
                       />
                     </div>
