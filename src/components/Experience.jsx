@@ -55,17 +55,17 @@ const ExperienceCard = ({ experience}) => (
 const Experience = () => {
   return (
     <>
-      <div className="">
+      <div className="w-full">
       <motion.div variants={textVariant} className="text-center flex flex-col justify-center items-center">
        <p className={`${styles.sectionSubText} text-center`}>What i have done so far</p>
         <h2 className={`${styles.sectionHeadText}`}>Experience</h2>
       </motion.div>
       </div>
 
-      <div className="mt-20 flex flex-col">
+      <div className="w-full h-full mt-20 flex flex-col">
         <VerticalTimeline className="border-none">
           {experiences.map((experience, index) => (
-            <ExperienceCard key={index} id={index} experience={experience} />
+            <ExperienceCard key={`experience-${index}`} index={index} id={index} experience={experience} />
           ))}
         </VerticalTimeline>
       </div>
