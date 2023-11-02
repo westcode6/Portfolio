@@ -9,9 +9,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full mx-auto fixed  top-0 py-4 z-10 px-2`}
+      className={`w-full mx-auto fixed  top-0    z-10 px-2  `}
     >
-      <div className="w-full max-w-7xl mx-auto flex items-center justify-between glass-effect shadow-xl border-b border-lime-400 p-2 rounded-b-2xl">
+      <div className="w-full max-w-7xl mx-auto p-2 flex items-center justify-between glass-effect shadow-xl border-b border-lime-400 rounded-b-2xl">
         <div className="">
           <Link
             to="/"

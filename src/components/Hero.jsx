@@ -61,7 +61,7 @@ const Hero = () => {
               >
                 <a href={`#${link.id}`} className="text-sm text-neutral-500 hover:text-lime-400 font-mono flex gap-1 items-center justify-center">
                 {/* <span className="w-1 ml-1 h-1 rounded-full bg-lime-400 bg-opacity-20 animate-ping"></span> */}
-               <span className="text-xs text-lime-100 animate-pulse"><i class={link.icon}></i></span>
+               <span className="text-xs text-neutral-400 animate-pulse"><i class={link.icon}></i></span>
       
                  
                 <span className="text-xs">
