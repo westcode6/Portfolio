@@ -18,8 +18,8 @@ const Hero = () => {
             <section
               className={`w-full h-full flex flex-col items-end justify-end relative`}
             >
-              <div className="w-full flex flex-col sm:flex-row  gap-4 items-center justify-between">
-                <div className="w-full max-w-2xl pt-20 sm:py-20">
+              <div className="w-full px-4 rounded-xl shadow-xl flex flex-col sm:flex-row  gap-4 items-center justify-between">
+                <div className="w-full glass-effect max-w-2xl pt-20 sm:py-20">
                 <div className="glitch-wrapper w-full flex justify-start items-start">
                 <div className="w-full hidden max-w-2xl py-5">
                 <div className="glitch-wrapper hidden sm:block w-fit bg-neutral-900 rounded-xl shadow-xl p-2  justify-start items-start">
@@ -40,32 +40,38 @@ const Hero = () => {
                     id=""
                     className="text-4xl  sm:text-5xl md:text-[62px] font-black text-white text-center sm:text-left"
                   >
-                    Building digital products, brands, and experience
+                    Building digital products, brands, and experience 
+                    {/* <i class="fa fa-camera-retro fa-2x"></i> */}
+
                   </h1>
           <div className="w-full flex flex-col items-center justify-center sm:items-start">
 
-          <ul className="list-none flex gap-4 mt-4">
+
+
+          <ul className="list-none flex gap-2 px-4 mt-4">
             {profileLinks.map((link) => (
               <li
                 key={link.id}
                 className={`
             text-lime-400"
-              px-4 py-2 rounded-xl bg-neutral-900 hover:text-lime-500 shadow-xl hover:shadow text-sm  sm:text-base font-semibold cursor-pointer`}
+              px-2 py-2 rounded-xl bg-neutral-900 hover:text-lime-500 shadow-inner hover:shadow text-xs font-semibold cursor-pointer`}
                 onClick={() => {
                   setActive(link.title);
                 }}
               >
-                <a href={`#${link.id}`} className="text-sm text-neutral-500 hover:text-lime-400 font-mono flex  flex-col items-start">
-
+                <a href={`#${link.id}`} className="text-sm text-neutral-500 hover:text-lime-400 font-mono flex gap-1 items-center justify-center">
+                {/* <span className="w-1 ml-1 h-1 rounded-full bg-lime-400 bg-opacity-20 animate-ping"></span> */}
+               <span className="text-xs text-lime-100 animate-pulse"><i class={link.icon}></i></span>
+      
                   {link.title}
-                <span className="w-1 ml-1 h-1 rounded-full bg-lime-400 bg-opacity-20 animate-ping"></span>
+                
 
                 </a>
               </li>
             ))}
           </ul>
-                <div className="w-full flex items-center justify-center sm:justify-start">
-                <button className="mt-5 sm:mt-16 bg-lime-400 border border-lime-300 text-black shadow-xl rounded-xl md:rounded-tr-xl px-6 sm:px-12 py-3 text-sm sm:text-base font-mono  font-bold  uppercase flex items-center justify-center gap-2">
+          <div className="w-full flex items-center justify-center sm:justify-start">
+                <button className="w-full sm:w-fit mt-5 sm:mt-16 bg-lime-400 border border-lime-400 text-neutral-900 shadow-xl rounded-xl md:rounded-tr-xl px-6 sm:px-12 py-3 text-sm sm:text-base font-mono  font-bold  uppercase flex items-center justify-center gap-2">
           let's build Together
                   <span className="text-black">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
@@ -76,6 +82,8 @@ const Hero = () => {
                   </span>
                 </button> 
                 </div>
+      
+              
                </div>
                 </div>
 
@@ -86,10 +94,10 @@ const Hero = () => {
                     variants={slideIn("bottom", "tween", 0.23, 1)}
                     className="w-full"
                   >
-                    <div className="w-full md:w-80 h-72 bg-neutral-900 shadow-xl  p-4 md:mt-0 rounded-full flex items-center justify-end">
+                    <div className="w-full md:w-80 h-72 bg-neutral-900 p-4 md:mt-0 rounded-full flex items-center justify-end">
                       <img
                         src={myProfile}
-                        className="w-full h-full object-cover shadow-xl border-4  border-neutral-800 rounded-3xl"
+                        className="w-full h-full object-cover  border-4  border-neutral-800 rounded-full"
                         alt="my gif"
                       />
                     </div>

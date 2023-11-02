@@ -52,15 +52,20 @@ import {
     {
       id: "LinkedIn",
       title: "LinkedIn",
+      icon: "fa fa-linkedin fa-1x"
     },
     {
       id: "Dribble",
       title: "Dribble",
+      icon: "fa fa-dribbble fa-1x"
+
     },
 
     {
       id: "Instagram",
       title: "Instagram",
+      icon: "fa fa-instagram fa-1x"
+
     },
   ];
   
