@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 // Create The Service Card Component to render our services
 export const ServiceCard = ({index, title, icon, desc}) => {
   return (
-    <Tilt className="xs:w-[220px] bg-neutral-900 w-full  rounded-xl">
+    <Tilt className="w-full sm:w-[270px] bg-neutral-900  rounded-xl">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         // animation pattern
@@ -48,7 +48,7 @@ const About = () => {
         {/* <p className={`${styles.sectionSubText}`}>Introduction
 
         </p> */}
-        <h2 className={`${styles.sectionHeadText}`}><span className="border-b-4 border-lime-400 rounded-b-2xl px-4 shadow-xl">Collaborate</span> with brands and agencies to create impactful results</h2>
+        <h2 className={`${styles.sectionHeadText}`}><span className="border-b-4 border-green-500 rounded-b-2xl px-4 shadow-xl">Collaborate</span> with brands and agencies to create impactful results</h2>
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-gray-gradient text-[16px] max-w-3xl leading-7 hidden">
@@ -60,7 +60,7 @@ const About = () => {
       </motion.p>
      </div>
 
-      <div className="px-2 mt-8 md:mt-24 flex flex-end justify-end flex-wrap gap-10">
+      <div className="px-2 mt-8 md:mt-24 flex justify-center flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

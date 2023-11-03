@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav
       className={`w-full mx-auto fixed  top-0    z-10 px-2  `}
     >
-      <div className="w-full max-w-7xl mx-auto p-2 flex items-center justify-between glass-effect shadow-xl border-b border-lime-400 rounded-b-2xl">
+      <div className="w-full max-w-7xl mx-auto p-2 flex items-center justify-between glass-effect shadow-xl border-b border-green-400 rounded-b-2xl">
         <div className="">
           <Link
             to="/"
@@ -21,7 +21,7 @@ const Navbar = () => {
               windows.scrollTo(0, 0);
             }}
           >
-            <span className="text-lime-400">
+            <span className="text-green-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -38,7 +38,7 @@ const Navbar = () => {
               </svg>
             </span>{" "}
            <div className="flex items-center justify-center">
-           <span className="text-lime-400">Hello@</span> 
+           <span className="text-green-400">Hello@</span> 
            <span className="font-bold ">God'spower.Dev</span> 
            <span className="text-xl">👋 </span>
            </div>
@@ -53,28 +53,28 @@ const Navbar = () => {
               <li
                 key={link.id}
                 className={`
-            text-lime-400"
-              p-2 rounded-xl hover:bg-neutral-900 hover:text-lime-500 shadow-xl hover:shadow text-sm  sm:text-lg font-semibold uppercase cursor-pointer`}
+            text-green-400"
+              p-2 rounded-xl hover:bg-neutral-900 hover:text-green-500 shadow-xl hover:shadow text-sm  sm:text-lg font-semibold uppercase cursor-pointer`}
                 onClick={() => {
                   setActive(link.title);
                 }}
               >
-                <a href={`#${link.id}`} className="text-sm text-neutral-500 hover:text-lime-400 font-mono flex  flex-col items-start">
+                <a href={`#${link.id}`} className="text-sm text-neutral-500 hover:text-green-400 font-mono flex  flex-col items-start">
 
                   {link.title}
-                <span className="w-1 ml-1 h-1 rounded-full bg-lime-400 bg-opacity-20 animate-ping"></span>
+                <span className="w-1 ml-1 h-1 rounded-full bg-green-400 bg-opacity-20 animate-ping"></span>
 
                 </a>
               </li>
             ))}
           </ul>
-          <button className="px-4 py-2 hidden sm:block text-xs  bg-neutral-900  hover:bg-neutral-800 text-lime-400 hover:text-lime-400  rounded-2xl shadow-xl  transfrom duration-300  hover:scale-20">
+          <button className="px-4 py-2 hidden sm:block text-xs  bg-neutral-900  hover:bg-neutral-800 text-green-400 hover:text-green-400  rounded-2xl shadow-xl  transfrom duration-300  hover:scale-20">
             <a
               href="https://api.whatsapp.com/send?phone=09065017306"
               className="font-medium uppercase flex items-center"
             >
             
-              <span className="p-2 rounded-full shaodow-inner bg-neutral-900 mr-3 text-lime-400  font-mono flex items-center justify-center">
+              <span className="p-2 rounded-full shaodow-inner bg-neutral-900 mr-3 text-green-400  font-mono flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

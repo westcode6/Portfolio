@@ -1,7 +1,7 @@
 import React from "react";
-// import { StarsCanvas } from "./canvas";
+// import { StarsCanvas, ComputerCanvas } from "./canvas";
 import { motion } from "framer-motion";
-import { slideIn } from "../utils/motion";
+import { slideIn, fadeIn } from "../utils/motion";
 import { profileLinks } from "../constants";
 import { mann } from "../assets";
 const Hero = () => {
@@ -11,7 +11,6 @@ const Hero = () => {
       <div>
         {/* <StarsCanvas /> */}
         <div className="relative z-0">
-          {/* <StarsCanvas /> */}
           <div
             className={`px-4 md:px-4 py-10 mb-20 md:py-36  xl:flex-row flex-col-reverse flex w-full max-w-7xl mx-auto`}
           >
@@ -44,6 +43,14 @@ const Hero = () => {
                     {/* <i class="fa fa-camera-retro fa-2x"></i> */}
 
                   </h1>
+
+                  <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-neutral-500 text-[12px] text-center sm:text-left max-w-3xl leading-7">
+        I'm a skilled software developer with Experience in TypeScript and
+        JavaScript, and expertise in framerwoks like React, Node.js and
+        Three.js. I'm a quick learner and collaborate closely with clients to
+        create efficient, scalable, and user-friendly solutions that solve
+        real-world problems. Let's work together to bring your ideas to life!
+      </motion.p>
           <div className="w-full flex flex-col items-center justify-center sm:items-start">
 
 
@@ -73,7 +80,7 @@ const Hero = () => {
             ))}
           </ul>
           <div className="w-full flex items-center justify-center sm:justify-start">
-                <button className="w-full sm:w-fit mt-5 sm:mt-16 bg-lime-400 border border-lime-400 text-neutral-900 shadow-xl rounded-xl md:rounded-tr-xl px-6 sm:px-12 py-3 text-sm sm:text-base font-mono  font-bold  uppercase flex items-center justify-center gap-2">
+                <button className="w-72 mt-5 sm:mt-16 bg-green-400 border border-green-400 text-neutral-900 shadow-xl rounded-xl md:rounded-tr-xl px-6  py-3 text-sm sm:text-base font-mono  font-bold  uppercase flex items-center justify-center gap-2">
           let's build Together
                   <span className="text-black">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
@@ -91,6 +98,8 @@ const Hero = () => {
 
                 <div className="w-full  max-w-sm  md:flex items-center justify-center rounded-xl bg-neutral-800 bg-opacity-5">
                   {/* Image section */}
+
+
 
                   <motion.div
                     variants={slideIn("bottom", "tween", 0.23, 1)}

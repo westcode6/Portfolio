@@ -171,6 +171,12 @@ button {
   transform: translateZ(0);
 }
 
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+
 @keyframes mulShdSpin {
   0%,
   100% {

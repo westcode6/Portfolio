@@ -26,7 +26,7 @@ const ProjectCard = ({
             speed: 450,
           }}
 
-          className="glass-effect p-5 rounded-2xl bg-neutral-900 border-neutral-700 sm:w-[360px] w-full"
+          className="rounded-2xl bg-neutral-900 border-neutral-700 w-[320px] sm:w-[360px] "
         >
           <div className="relative w-full h-[200px]">
             <img src={image} alt={name} className="w-full h-full rounded-2xl object-cover" />
@@ -84,9 +84,9 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap  gap-5">
+      <div className="w-full no-scrollbar overflow-auto mt-20 flex items-center space-x-10">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </div>
