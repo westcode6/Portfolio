@@ -45,26 +45,15 @@ const About = () => {
     <>
       <div
         id="about"
-        className={`w-full px-4 md:px-0 flex flex-col items-center justify-center text-center`}
+        className={`w-full  px-4 md:px-0 flex flex-col items-center justify-center text-center`}
       >
         {/* NOTE: that every motion effects must be passed as props in the motion tag */}
         <div className="flex flex-col items-center justify-center">
 
-        <motion.div
-              variants={slideIn("right", "", 0.23, 0.3)}
-              className="w-full  flex items-center justify-center sm:hidden"
-            >
-              <div className="w-32 h-32 md:w-96 md:h-80 bg-neutral-900 p-4 md:mt-0 rounded-full r">
-                <img
-                  src={myProfile}
-                  className="w-full h-full object-cover  border-4  border-neutral-800 rounded-full"
-                  alt="my gif"
-                />
-              </div>
-            </motion.div>
+       
           <motion.div
             className="w-full max-w-xl mx-auto flex flex-col items-center justify-center"
-            variants={slideIn("left", "", 0.23, 0.3)}
+            variants={slideIn("bottom", "", 0.23, 0.3)}
             // textVariant() method is used to animate the texts
             // the vairiants prop is used to define what you're giving motion effects to
           >

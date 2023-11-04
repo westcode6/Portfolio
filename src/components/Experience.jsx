@@ -8,16 +8,19 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-const ExperienceCard = ({ experience}) => (
-  <VerticalTimelineElement
+const ExperienceCard = ({ experience, index}) => (
+<div className="w-full h-screen">
+<VerticalTimelineElement
+key={experience.index}
   // The various Attributes are used to control the appearance of our vertical TimeLineElement
-
     contentStyle={{ background: "transparent", color: "#bbbbbb"}} //this attribute sets the backgroud color of the TimeLineElement
     contentArrowStyle={{ borderRight: "12px solid #bbbbbb" }} //this is for the arrow
     date={experience.date} //here's the date 
     iconStyle={{ background: experience.iconBg }} // this for the icon background appearance
     icon={
-      <div className="w-full h-full flex items-center justify-center">
+      <div 
+      
+      className="w-full h-full flex items-center justify-center">
         <img
           src={experience.icon}
           alt={experience.company_name}
@@ -29,7 +32,9 @@ const ExperienceCard = ({ experience}) => (
 
   >
   
-  <div className="w-full">
+  <div 
+  key={index}
+  className="w-full">
   <div className="sm:p-3 lg:p-6">
       <h3 className="text-white text-[24px]">{experience.title}</h3>
       <h5 className="text-base text-green-300 font-mono font-thin mt-2">{experience.company_name}</h5>
@@ -37,9 +42,9 @@ const ExperienceCard = ({ experience}) => (
   
 <ul className="space-y-6">
         {experience.points.map((point, index) => (
-          <div className="flex items-center justify-start gap-2 my-2 bg-neutral-900 shadow-2xl hover:shadow-inner rounded-2xl">
+          <div key={index} className="flex items-center justify-start gap-2 my-2 bg-neutral-900 shadow-2xl hover:shadow-inner rounded-2xl">
             <span className="w-4 h-6 rounded-2xl bg-green-600 "></span>
-              <li key={index} className="text-sm p-2 line-height-2 text-neutral-400 tracking-wide font-normal ">{point}</li>
+              <li  className="text-sm p-2 line-height-2 text-neutral-400 tracking-wide font-normal ">{point}</li>
 
             {/* <span className="w-4 h-2 rounded-2xl bg-green-400 "></span> */}
 <span />
@@ -50,6 +55,7 @@ const ExperienceCard = ({ experience}) => (
     </div>
   </div>
   </VerticalTimelineElement>
+</div>
 );
 
 const Experience = () => {
@@ -62,7 +68,7 @@ const Experience = () => {
       </motion.div>
       </div>
 
-      <div className="w-full h-full mt-20 flex flex-col">
+      <div className="w-full h-full mt-10 sm:mt-20 flex flex-col">
         <VerticalTimeline className="border-none">
           {experiences.map((experience, index) => (
             <ExperienceCard key={`experience-${index}`} index={index} id={index} experience={experience} />

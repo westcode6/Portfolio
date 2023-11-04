@@ -26,7 +26,7 @@ const Navbar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
                 className="w-10 h-10"
               >
@@ -38,9 +38,7 @@ const Navbar = () => {
               </svg>
             </span>{" "}
            <div className="flex items-center justify-center">
-           <span className="text-green-400">Hello@</span> 
-           <span className="font-bold ">God'spower.Dev</span> 
-           <span className="text-xl">👋 </span>
+           <span className="font-bold text-green-400">@God'spower.Dev</span> 
            </div>
           </Link>
         </div>
@@ -54,12 +52,12 @@ const Navbar = () => {
                 key={link.id}
                 className={`
             text-green-400"
-              p-2 rounded-xl hover:bg-neutral-900 hover:text-green-500 shadow-xl hover:shadow text-sm  sm:text-lg font-semibold uppercase cursor-pointer`}
+              p-2 rounded-xl hover:bg-neutral-900 hover:text-green-500 shadow-xl hover:shadow text-sm  sm:text-lg font-medium uppercase cursor-pointer`}
                 onClick={() => {
                   setActive(link.title);
                 }}
               >
-                <a href={`#${link.id}`} className="text-sm text-neutral-400 hover:text-green-400 font-mono flex  flex-col items-start">
+                <a href={`#${link.id}`} className="text-sm text-neutral-400 hover:text-green-400 flex  flex-col items-start">
 
                   {link.title}
                 <span className="w-1 ml-1 h-1 rounded-full bg-green-400 bg-opacity-20 animate-ping"></span>
@@ -68,14 +66,14 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="px-4 py-2 hidden sm:block text-xs border bg-neutral-800  hover:bg-neutral-900 text-green-400 border-neutral-800 hover:text-green-400  rounded-2xl shadow-xl  transfrom duration-300  hover:scale-20">
+          <button className="hidden sm:block bg-white hover:bg-green-400 p-2 rounded-lg text-sm text-black uppercase font-semibold">
             <a
               href="https://api.whatsapp.com/send?phone=09065017306"
-              className="font-medium uppercase flex items-center"
+              className=""
             >
             
-              <span className="p-2 rounded-full shaodow-xl bg-neutral-900 mr-3 text-green-400  font-mono flex items-center justify-center">
-                <svg
+              {/* <span className="p-2 rounded-full shaodow-xl bg-neutral-900 mr-1 text-green-400  font-mono flex items-center justify-center">
+                <svg 
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -89,10 +87,9 @@ const Navbar = () => {
                     d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
                   />
                 </svg>
-              </span>{" "}
-           
-
-          <span className="text-sm font-mono font-black">   Hire me</span>
+              </span>{" "} */}
+        <span className="text-neutral-900 text-xl"><i className="fa fa-glass" aria-hidden="true"></i></span>   
+Let's talk
 
             </a>
           </button>

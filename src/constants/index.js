@@ -34,16 +34,16 @@ import {
   
     {
       id: "about",
-      title: "About",
+      title: "About me",
     },
     {
       id: "project",
-      title: "Project",
+      title: "Projects",
     },
 
     {
-      id: "contact",
-      title: "Contact",
+      id: "Experience",
+      title: "Experience",
     },
   ];
 
