@@ -51,7 +51,7 @@ const About = () => {
         <div className="flex flex-col items-center justify-center">
 
         <motion.div
-              variants={slideIn("bottom", "tween", 0.23, 1)}
+              variants={slideIn("right", "", 0.23, 0.3)}
               className="w-full  flex items-center justify-center sm:hidden"
             >
               <div className="w-32 h-32 md:w-96 md:h-80 bg-neutral-900 p-4 md:mt-0 rounded-full r">
@@ -64,7 +64,8 @@ const About = () => {
             </motion.div>
           <motion.div
             className="w-full max-w-xl mx-auto flex flex-col items-center justify-center"
-            variants={textVariant()} // textVariant() method is used to animate the texts
+            variants={slideIn("left", "", 0.23, 0.3)}
+            // textVariant() method is used to animate the texts
             // the vairiants prop is used to define what you're giving motion effects to
           >
             {/* <h2 className="bg-primary">Chech the color here</h2> */}
