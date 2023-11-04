@@ -83,12 +83,12 @@ And we'll need some VITAL CREDENTIALS from the EMAIL_JS service, this can only b
   };
 
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse  flex gap-10 overflow-hidden">
+    <div className="xl:mt-12 xl:flex-row flex-col-reverse  flex gap-5 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] glass-effect rounded-2xl"
       >
-        <div className=" px-4 py-8 md:p-4 lg:p-10">
+        <div className="py-8 md:p-4">
           <p className={`${styles.sectionSubText}`}>Get in touch</p>
           <h3 className={`${styles.sectionHeadText}`}>Contact.</h3>
 
