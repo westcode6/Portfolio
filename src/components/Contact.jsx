@@ -86,7 +86,7 @@ And we'll need some VITAL CREDENTIALS from the EMAIL_JS service, this can only b
     <div className="xl:mt-12 xl:flex-row flex-col-reverse  flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] shadow-xl  rounded-2xl"
+        className="flex-[0.75] glass-effect rounded-2xl"
       >
         <div className=" px-4 py-8 md:p-4 lg:p-10">
           <p className={`${styles.sectionSubText}`}>Get in touch</p>
@@ -140,7 +140,7 @@ And we'll need some VITAL CREDENTIALS from the EMAIL_JS service, this can only b
             <button
               type="submit"
               onClick={handleSubmit}
-              className="w-full sm:w-fit  border-2 border-lime-400 text-lime-400  py-3 px-8 outline-none w-fit font-mono  uppercase tracking-wider shadow-md shadow-primary rounded-lg hover:bg-lime-700 hover:text-green-100 transition hover:-translate-y-0.5 ease-in duration-100"
+              className=" sm:w-fit bg-green-400 text-neutral-900  hover:bg-neutral-900  hover:text-green-400 py-3 px-8 outline-none w-fit font-mono  uppercase tracking-wider shadow-md shadow-primary rounded-lg  transition hover:-translate-y-0.5 ease-in duration-100"
             >
               {loading ? "Sending..." : "Send"}
             </button>
@@ -150,7 +150,7 @@ And we'll need some VITAL CREDENTIALS from the EMAIL_JS service, this can only b
 
       <motion.div
         variants={slideIn("right", "tween", 0.23, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[450px]"
       >
         <EarthCanvas />
       </motion.div>

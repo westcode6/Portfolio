@@ -25,7 +25,7 @@ const FeedbackCard = ({
           <div className="mt-7 flex justify-between gap-4">
             <div className="flex-1 flex flex-col gap-1">
               <p className="text-[16px] font-medium">
-                <span className="text-lime-500">@</span> <span class="text-lime-400">{name}</span>
+                <span className="text-green-500">@</span> <span class="text-green-400">{name}</span>
               </p>
               <p className="mt-1 text-sm text-neutral-200">
                 {designation} of {company}
@@ -48,7 +48,7 @@ const Feedbacks = () => {
   return (
     <div 
     
-    className={`w-full border-t-2 border-lime-400 rounded-t-2xl shadow-xl mt-12 p-4 rounded-2xl  relative`}
+    className={`w-full border-t-2 border-green-400 rounded-t-2xl shadow-xl mt-12 p-4 rounded-2xl  relative`}
     >
       <div
         className={`rounded-2xl min-h-[300px]`}

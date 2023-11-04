@@ -12,13 +12,13 @@ const Hero = () => {
         {/* <StarsCanvas /> */}
         <div className="relative z-0">
           <div
-            className={`px-4 md:px-4 py-10 mb-20 md:py-36  xl:flex-row flex-col-reverse flex w-full max-w-7xl mx-auto`}
+            className={`px-4 sm:px-0 py-10 mb-20 md:py-36  xl:flex-row flex-col-reverse flex w-full max-w-7xl mx-auto`}
           >
             <section
               className={`w-full h-full flex flex-col items-end justify-end relative`}
             >
-              <div className="w-full px-4 rounded-xl shadow-xl flex flex-col sm:flex-row  gap-4 items-center justify-between">
-                <div className="w-full glass-effect max-w-2xl pt-20 sm:py-20">
+              <div className="w-full px-4 rounded-xl glass-effect shadow-xl flex flex-col sm:flex-row  gap-4 items-center justify-between">
+                <div className="w-full max-w-2xl pt-20 md:pr-20 sm:py-10">
                 <div className="glitch-wrapper w-full flex justify-start items-start">
                 <div className="w-full hidden max-w-2xl py-5">
                 <div className="glitch-wrapper hidden sm:block w-fit bg-neutral-900 rounded-xl shadow-xl p-2  justify-start items-start">
@@ -44,7 +44,7 @@ const Hero = () => {
 
                   </h1>
 
-                  <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-neutral-500 text-[12px] text-center sm:text-left max-w-3xl leading-7">
+                  <motion.p variants={fadeIn("", "", 0.1, 1)} className="my-4 text-neutral-400 text-[13px] sm:text-base text-center sm:text-left max-w-3xl leading-7">
         I'm a skilled software developer with Experience in TypeScript and
         JavaScript, and expertise in framerwoks like React, Node.js and
         Three.js. I'm a quick learner and collaborate closely with clients to
@@ -55,7 +55,7 @@ const Hero = () => {
 
 
 
-          <ul className="list-none flex gap-2 px-4 mt-4">
+          <ul className="list-none flex gap-2 mt-4">
             {profileLinks.map((link) => (
               <li
                 key={link.id}
@@ -80,7 +80,7 @@ const Hero = () => {
             ))}
           </ul>
           <div className="w-full flex items-center justify-center sm:justify-start">
-                <button className="w-72 mt-5 sm:mt-16 bg-green-400 border border-green-400 text-neutral-900 shadow-xl rounded-xl md:rounded-tr-xl px-6  py-3 text-sm sm:text-base font-mono  font-bold  uppercase flex items-center justify-center gap-2">
+                <button className="w-72 mt-5 sm:mt-8 bg-green-400 border border-green-400 text-neutral-900 shadow-xl rounded-xl md:rounded-tr-xl px-6  py-3 text-sm sm:text-base font-mono  font-bold  uppercase flex items-center justify-center gap-2">
           let's build Together
                   <span className="text-black">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
@@ -103,9 +103,9 @@ const Hero = () => {
 
                   <motion.div
                     variants={slideIn("bottom", "tween", 0.23, 1)}
-                    className="w-full"
+                    className="w-full hidden sm:block"
                   >
-                    <div className="w-full md:w-80 h-72 bg-neutral-900 p-4 md:mt-0 rounded-full flex items-center justify-end">
+                    <div className="w-full md:w-96 h-80 bg-neutral-900 p-4 md:mt-0 rounded-full flex items-center justify-end">
                       <img
                         src={myProfile}
                         className="w-full h-full object-cover  border-4  border-neutral-800 rounded-full"
@@ -120,7 +120,7 @@ const Hero = () => {
             </section>
           </div>
 
-          <div className="absolute -bottom-12 xs:bottom-10 w-full flex justify-center items-center">
+          <div className="absolute -bottom-4 xs:bottom-24 w-full flex justify-center items-center">
             <a href="#about">
               <div className="w-8 h-12 rounded-full border-4 border-white   flex justify-center items-start p-2 cursor-pointer">
                 <motion.div

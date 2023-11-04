@@ -59,7 +59,7 @@ const Navbar = () => {
                   setActive(link.title);
                 }}
               >
-                <a href={`#${link.id}`} className="text-sm text-neutral-500 hover:text-green-400 font-mono flex  flex-col items-start">
+                <a href={`#${link.id}`} className="text-sm text-neutral-400 hover:text-green-400 font-mono flex  flex-col items-start">
 
                   {link.title}
                 <span className="w-1 ml-1 h-1 rounded-full bg-green-400 bg-opacity-20 animate-ping"></span>
@@ -68,13 +68,13 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="px-4 py-2 hidden sm:block text-xs  bg-neutral-900  hover:bg-neutral-800 text-green-400 hover:text-green-400  rounded-2xl shadow-xl  transfrom duration-300  hover:scale-20">
+          <button className="px-4 py-2 hidden sm:block text-xs border bg-neutral-800  hover:bg-neutral-900 text-green-400 border-neutral-800 hover:text-green-400  rounded-2xl shadow-xl  transfrom duration-300  hover:scale-20">
             <a
               href="https://api.whatsapp.com/send?phone=09065017306"
               className="font-medium uppercase flex items-center"
             >
             
-              <span className="p-2 rounded-full shaodow-inner bg-neutral-900 mr-3 text-green-400  font-mono flex items-center justify-center">
+              <span className="p-2 rounded-full shaodow-xl bg-neutral-900 mr-3 text-green-400  font-mono flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
