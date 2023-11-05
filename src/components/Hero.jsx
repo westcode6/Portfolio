@@ -8,7 +8,7 @@ const Hero = () => {
   const myProfile = mann;
   return (
     <>
-      <div className="w-full h-screen">
+      <div className="w-full h-screen overflow-hidden">
         <StarsCanvas />
         <div className="">
           <div
