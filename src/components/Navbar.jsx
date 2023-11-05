@@ -38,7 +38,7 @@ const Navbar = () => {
               </svg>
             </span>{" "}
            <div className="flex items-center justify-center">
-           <span className="font-bold text-green-400">@God'spower.Dev</span> 
+           <span className="font-bold text-green-400">@God'sdev</span> 
            </div>
           </Link>
         </div>

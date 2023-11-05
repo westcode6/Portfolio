@@ -43,18 +43,18 @@ const Hero = () => {
                     // textVariant() method is used to animate the texts
                     // the vairiants prop is used to define what kind of motion effect you wish to apply
                   >
-                    <div className="block sm:hidden w-40 h-32 py-1 md:w-96 md:h-80 bg-neutral-900 p-4 md:mt-0 rounded-full">
+                    <div className="block sm:hidden w-32  md:w-96 md:h-80 bg-neutral-900  md:mt-0 rounded-full">
                       <img
                         src={myProfile}
-                        className="w-full h-full object-cover  border-4  border-neutral-800 rounded-full"
+                        className="w-full h-full object-cover  border-8  border-neutral-800 rounded-full"
                         alt="my gif"
                       />
                     </div>
 
                     <div className="text-center sm:text-left">
-                      <h1 className="mt-1 text-lg   font-thin text-neutral-500 tracking-tight">
+                      <h1 className="mt-1 text-lg font-mono  font-thin text-neutral-500 tracking-tight">
                         Hi, I'm{" "}
-                        <span className="text-neutral-400 font-medium">
+                        <span className="text-neutral-400 font-mono font-semibold">
                           God'spower{" "}
                           <i
                             className="fa fa-hand-peace-o text-green-400 animate-bounce"
