@@ -9,9 +9,9 @@ const Hero = () => {
   return (
     <>
         {/* <StarsCanvas /> */}
-        <div className="w-full overflow-hidden">
+        <div className="w-full  glass-effect">
           <div
-            className={`px-4 sm:px-0 py-2  md:py-36  xl:flex-row flex-col-reverse flex w-full md:max-w-7xl mx-auto`}
+            className={`px-4 sm:px-0 py-2 mb-10 md:py-36  xl:flex-row flex-col-reverse flex w-full md:max-w-7xl mx-auto`}
           >
             <section
               className={`w-full h-full flex flex-col items-end justify-end relative`}
@@ -51,16 +51,16 @@ const Hero = () => {
                     </div>
 
                     <div className="text-center sm:text-left">
-                      <h1 className="mt-1 text-lg font-thin text-neutral-400 tracking-tight">
+                      <p className="mt-1 text-lg font-thin text-neutral-500 tracking-tight">
                         Hi, I'm{" "}
-                        <span className="text-neutral-300  font-semibold">
+                        <span className="text-neutral-400  font-medium">
                           God'spower{" "}
                           <i
                             className="fa fa-hand-peace-o text-green-400 animate-bounce"
                             aria-hidden="true"
                           ></i>
                         </span>
-                      </h1>
+                      </p>
                       <h1
                         id=""
                         className="mt-4 text-4xl sm:text-5xl md:text-[62px] font-black text-white text-center sm:text-left"
