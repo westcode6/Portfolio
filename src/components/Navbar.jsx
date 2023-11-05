@@ -9,9 +9,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full mx-auto fixed  top-0    z-10 px-2  `}
+      className={`w-full mx-auto fixed glass-effect top-0    z-10`}
     >
-      <div className="w-full max-w-7xl mx-auto p-2 flex items-center justify-between glass-effect shadow-xl border-b border-green-400 rounded-b-2xl">
+      <div className="w-full max-w-7xl mx-auto p-2 flex items-center justify-between rounded-b-2xl">
         <div className="">
           <Link
             to="/"
@@ -21,7 +21,7 @@ const Navbar = () => {
               windows.scrollTo(0, 0);
             }}
           >
-            <span className="text-green-400">
+            <span className="text-green-400 text-3xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -36,9 +36,11 @@ const Navbar = () => {
                   d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"
                 />
               </svg>
+              
             </span>{" "}
            <div className="flex items-center justify-center">
-           <span className="font-bold text-green-400">@God'sdev</span> 
+           <span className="font-bold text-green-400">God'spower</span> 
+           <span className="text-neutral-400 lowercase">.code</span>
            </div>
           </Link>
         </div>

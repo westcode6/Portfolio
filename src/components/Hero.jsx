@@ -1,5 +1,5 @@
 import React from "react";
-import { StarsCanvas } from "./canvas";
+// import { StarsCanvas } from "./canvas";
 import { motion } from "framer-motion";
 import { slideIn, textVariant } from "../utils/motion";
 import { profileLinks } from "../constants";
@@ -8,11 +8,10 @@ const Hero = () => {
   const myProfile = mann;
   return (
     <>
-      <div className="w-full h-screen overflow-hidden">
-        <StarsCanvas />
-        <div className="">
+        {/* <StarsCanvas /> */}
+        <div className="w-full">
           <div
-            className={`px-4 sm:px-0 py-2 mb-20 md:py-36  xl:flex-row flex-col-reverse flex w-full max-w-7xl mx-auto`}
+            className={`px-4 sm:px-0 py-2  md:py-36  xl:flex-row flex-col-reverse flex w-full md:max-w-7xl mx-auto`}
           >
             <section
               className={`w-full h-full flex flex-col items-end justify-end relative`}
@@ -52,9 +51,9 @@ const Hero = () => {
                     </div>
 
                     <div className="text-center sm:text-left">
-                      <h1 className="mt-1 text-lg font-mono  font-thin text-neutral-500 tracking-tight">
+                      <h1 className="mt-1 text-lg font-thin text-neutral-400 tracking-tight">
                         Hi, I'm{" "}
-                        <span className="text-neutral-400 font-mono font-semibold">
+                        <span className="text-green-400  font-semibold">
                           God'spower{" "}
                           <i
                             className="fa fa-hand-peace-o text-green-400 animate-bounce"
@@ -155,7 +154,7 @@ const Hero = () => {
             </section>
           </div>
 
-          <div className="absolute bottom-4 xs:bottom-24 w-full flex justify-center items-center">
+          <div className="absolute -bottom-8 xs:bottom-24 w-full flex justify-center items-center">
             <a href="#about">
               <div className="w-8 h-12 rounded-full border-4 border-white   flex justify-center items-start p-2 cursor-pointer">
                 <motion.div
@@ -173,7 +172,6 @@ const Hero = () => {
             </a>
           </div>
         </div>
-      </div>
     </>
   );
 };
