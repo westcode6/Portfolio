@@ -20,7 +20,7 @@ const App = () => {
       <BrowserRouter>
         <Navbar />
 
-        <div className="relative z-0">
+        <div className="w-full h-full relative z-0">
           <Hero />
           <StarsCanvas />
         </div>

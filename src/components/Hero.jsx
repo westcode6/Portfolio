@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <>
         {/* <StarsCanvas /> */}
-        <div className="w-full">
+        <div className="w-full overflow-hidden">
           <div
             className={`px-4 sm:px-0 py-2  md:py-36  xl:flex-row flex-col-reverse flex w-full md:max-w-7xl mx-auto`}
           >
@@ -53,7 +53,7 @@ const Hero = () => {
                     <div className="text-center sm:text-left">
                       <h1 className="mt-1 text-lg font-thin text-neutral-400 tracking-tight">
                         Hi, I'm{" "}
-                        <span className="text-green-400  font-semibold">
+                        <span className="text-neutral-300  font-semibold">
                           God'spower{" "}
                           <i
                             className="fa fa-hand-peace-o text-green-400 animate-bounce"
