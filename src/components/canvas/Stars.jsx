@@ -1,4 +1,5 @@
 // The Whole Essense of this file is to create a 3D rotating stars galaxy Model object 
+import CanvasLoader from "../Loader";
 
 import {useState, useRef, Suspense} from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
@@ -37,7 +38,7 @@ const StarsCanvas = () => {
   return (
     <div className='w-screen h-screen absolute  inset-0 z-[-1]'>
       <Canvas camera={{position: [0, 0, 1]}}>
-      <Suspense  fallback={1}>
+      <Suspense  fallback={<CanvasLoader />}>
         <Stars />
       </Suspense>
       <Preload />
