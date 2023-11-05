@@ -18,29 +18,23 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <div className="">
+        <Navbar />
 
-          <div className="">
-            <Navbar />
-
-            <div className="relative z-0">
-            <StarsCanvas />
-
-            <Hero />
-            </div>
-            <About />
-
-            <Experience />
-            <Tech />
-            <Works />
-            <Feedbacks />
-            <div className="relative z-0">
-              <Contact />
-              <StarsCanvas />
-            </div>
-            <Footer />
-          </div>
+        <div className="relative z-0">
+          <Hero />
+          <StarsCanvas />
         </div>
+        <About />
+
+        <Experience />
+        <Tech />
+        <Works />
+        <Feedbacks />
+        <div className="relative z-0">
+          <Contact />
+          <StarsCanvas />
+        </div>
+        <Footer />
       </BrowserRouter>
     </>
   );
