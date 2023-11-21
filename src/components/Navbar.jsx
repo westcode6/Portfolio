@@ -8,7 +8,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={`w-full glass-effect  z-10`}>
+    <nav className={`w-full bg-neutral-950 z-10`}>
       <div className="w-full max-w-7xl mx-auto p-2 flex items-center justify-between rounded-b-2xl">
         <div className="">
           <Link
@@ -19,14 +19,14 @@ const Navbar = () => {
               windows.scrollTo(0, 0);
             }}
           >
-            {/* <span className="text-red-500 text-xl">
+            <span className="text-green-500 text-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill={`text-red-400`}
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="w- h-10"
+                className="w-14 h-14"
               >
                 <path
                   strokeLinecap="round"
@@ -35,18 +35,18 @@ const Navbar = () => {
                 />
               </svg>
               
-            </span>{" "} */}
-
+            </span>{" "}
+{/* 
             <span className="font-medium">
               <i
-                className="fa fa-hand-peace-o text-4xl bg-lime-400 rounded-xl p-1 text-neutral-900"
+                className="fa fa-hand-peace-o text-4xl bg-green-400 rounded-xl p-1 text-neutral-900"
                 aria-hidden="true"
               ></i>
-            </span>
+            </span> */}
 
-            <p className="text-lg sm:text-2xl pl-2">
-           <span className="font-black tracking-wide">GP</span>
-           <span className="font-bold text-neutral-600">.Dev</span>
+            <p className="text-lg sm:text-2xl">
+           <span className="font-black font-mono uppercase tracking-wide">God'spower</span>
+           <span className="font-black text-neutral-500">.dev</span>
             </p>
           </Link>
         </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="hidden sm:block bg-lime-400 hover:bg-white p-2 rounded-lg text-xs text-neutral-900 hover:text-red-500 border border-stone-700 uppercase font-semibold">
+          <button className="hidden sm:block bg-neutral-900 hover:bg-white p-2 rounded-lg text-xs text-yellow-400 hover:text-green-500 border border-stone-700 uppercase font-semibold">
             <a
               href="https://api.whatsapp.com/send?phone=09065017306"
               className=""
@@ -95,7 +95,7 @@ const Navbar = () => {
                 </svg>
               </span>{" "} */}
               <span className="text-xl">
-                <i className="fa fa-glass mr-1" aria-hidden="true"></i>
+                <i className="fa fa-glass mr-1 text-yellow-300" aria-hidden="true"></i>
               </span>
               Let's talk
             </a>
@@ -104,7 +104,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation Build */}
         <div className="sm:hidden flex flex-1 justify-end items-center ">
-          <div className="shadow-xl   p-2  rounded-full">
+          <div className="shadow-2xl glass-effect p-2  rounded-full">
             <img
               src={toggle ? close : menu}
               onClick={() => {

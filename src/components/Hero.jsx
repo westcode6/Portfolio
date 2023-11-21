@@ -11,7 +11,7 @@ const Hero = () => {
       {/* <StarsCanvas /> */}
       <div className="w-full">
         <div
-          className={`px-4 sm:px-0 py-2 mb-10  md:py-24  xl:flex-row flex-col-reverse flex  w-full max-w-7xl mx-auto`}
+          className={`px-4 sm:px-0 py-2 mb-20  md:py-24  xl:flex-row flex-col-reverse flex  w-full max-w-7xl mx-auto`}
         >
           <section
             className={`w-full sm:h-[50vh] glass-effect flex flex-col sm:flex-row justify-between relative`}
@@ -23,21 +23,21 @@ const Hero = () => {
                 // textVariant() method is used to animate the texts
                 // the vairiants prop is used to define what kind of motion effect you wish to apply
               >
-                <div className="block sm:hidden w-32  md:w-96 mx-auto md:h-80 bg-green-400  md:mt-0 rounded-full">
+                <div className="block sm:hidden w-32  md:w-96 mx-auto md:h-80  md:mt-0 rounded-full">
                   <img
                     src={myProfile}
-                    className="w-full h-full object-cover  border-8  border-green-400 rounded-full"
+                    className="w-full h-full object-cover shadow-2xl  border-8  border-neutral-900 rounded-full"
                     alt="my gif"
                   />
                 </div>
 
-                <div className="text-center sm:text-left px- 4 sm:pr-10">
-                  <p className="mt-1 text-lg font-thin hidden text-neutral-500 tracking-tight">
+                <div className="text-center sm:text-left px-4 sm:pr-10">
+                  <p className="mt-1 text-lg font-semibold  text-neutral-600 tracking-tight">
                     Hi, I'm{" "}
-                    <span className="text-neutral-400  font-medium">
+                    <span className="text-neutral-400  font-bold">
                       God'spower{" "}
                       <i
-                        className="fa fa-hand-peace-o text-red-500 animate-bounce"
+                        className="fa fa-hand-peace-o text-2xl text-yellow-400 animate-bounce"
                         aria-hidden="true"
                       ></i>
                     </span>
@@ -50,7 +50,7 @@ const Hero = () => {
                     {/* <i class="fa fa-camera-retro fa-2x"></i> */}
                   </h1>
 
-                  <p className="my-6 px-6 sm:px-0 sm:pr-20  text-neutral-500  text-[13px] sm:text-[18px] text-center sm:text-left leading-7">
+                  <p className="my-6 px-6 sm:px-0 sm:pr-20  text-neutral-500  text-[16px] sm:text-[18px] text-center sm:text-left font-medium leading-7">
                     A Web and UI designer, based in Nigeria, passionate about
                     Solving visual Problems and Enhancing User Experiences
                     {/* I'm a skilled software developer with Experience in
@@ -91,7 +91,7 @@ const Hero = () => {
                   ))}
                 </ul>
                 <div className="w-full flex items-center justify-center sm:justify-start">
-                  <button className="w-full sm:w-fit mt-5 sm:mt-8 bg-lime-400 border border-green-500 text-neutral-900 shadow-xl rounded-xl md:rounded-tr-xl px-6  py-3 text-sm sm:text-base font-mono  font-bold  uppercase flex items-center justify-center gap-2">
+                  <button className="w-full sm:w-fit mt-10 sm:mt-8 bg-green-500 border border-green-500 text-neutral-900 shadow-xl rounded-xl md:rounded-tr-xl px-6  py-3 text-sm sm:text-base font-mono  font-bold  uppercase flex items-center justify-center gap-2">
                     Try me
                     <span className="text-neutral-900">
                       <svg
@@ -141,7 +141,7 @@ const Hero = () => {
           </section>
         </div>
 
-        <div className="absolute -bottom-8 xs:bottom-24 w-full flex justify-center items-center">
+        <div className="absolute -bottom-12 xs:bottom-24 w-full flex justify-center items-center">
           <a href="#about">
             <div className="w-8 h-12 rounded-full border-4 border-white   flex justify-center items-start p-2 cursor-pointer">
               <motion.div

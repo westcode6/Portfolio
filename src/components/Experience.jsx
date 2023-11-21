@@ -37,7 +37,7 @@ key={experience.index}
   className="w-full">
   <div className="sm:p-3 lg:p-6">
       <h3 className="text-white text-[24px]">{experience.title}</h3>
-      <h5 className="text-base text-green-300 font-mono font-thin mt-2">{experience.company_name}</h5>
+      <h5 className="text-base text-yellow-400 font-mono font-thin mt-2">{experience.company_name}</h5>
 <div className="mt-2 pb-4 sm:pr-6">
   
 <ul className="space-y-6">

@@ -64,7 +64,7 @@ const About = () => {
 
           
             <h2 className={`${styles.sectionHeadText}`}>
-              <span  className="border-b  border-amber-400 rounded-b-2xl px-4 shadow-xl">
+              <span  className="bg-yellow-400 rounded-b-sm text-neutral-900 px-4 py-2 shadow-xl">
                 Collaborate
               </span>{" "}
               with brands and agencies to create impactful results
