@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="">
           <Link
             to="/"
-            className="flex items-center glass-effect border-400 border-neutral-300 p-2 shadow-xl rounded-xl"
+            className="flex items-center rounded-xl"
             onClick={() => {
               setActive("");
               windows.scrollTo(0, 0);
