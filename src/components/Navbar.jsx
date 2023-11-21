@@ -8,27 +8,25 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav
-      className={`w-full mx-auto fixed glass-effect top-0    z-10`}
-    >
+    <nav className={`w-full glass-effect  z-10`}>
       <div className="w-full max-w-7xl mx-auto p-2 flex items-center justify-between rounded-b-2xl">
         <div className="">
           <Link
             to="/"
-            className="flex items-center uppercase text-xs font-mono font-bold"
+            className="flex items-center glass-effect border-400 border-neutral-300 p-2 shadow-xl rounded-xl"
             onClick={() => {
               setActive("");
               windows.scrollTo(0, 0);
             }}
           >
-            <span className="text-green-400 text-3xl">
+            {/* <span className="text-red-500 text-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
+                fill={`text-red-400`}
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="w-10 h-10"
+                className="w- h-10"
               >
                 <path
                   strokeLinecap="round"
@@ -37,44 +35,50 @@ const Navbar = () => {
                 />
               </svg>
               
-            </span>{" "}
-           <div className="flex items-center justify-center">
-           <span className="font-bold text-green-400">God'spower</span> 
-           <span className="text-neutral-400 lowercase">.code</span>
-           </div>
+            </span>{" "} */}
+
+            <span className="font-medium">
+              <i
+                className="fa fa-hand-peace-o text-4xl bg-lime-400 rounded-xl p-1 text-neutral-900"
+                aria-hidden="true"
+              ></i>
+            </span>
+
+            <p className="text-lg sm:text-2xl pl-2">
+           <span className="font-black tracking-wide">GP</span>
+           <span className="font-bold text-neutral-600">.Dev</span>
+            </p>
           </Link>
         </div>
 
         <div className="hidden sm:flex items-center gap-10">
-         
-
-        <ul className="list-none flex gap-4 mt-2">
+          <ul className="list-none flex gap-4 mt-2">
             {navLinks.map((link) => (
               <li
                 key={link.id}
                 className={`
-            text-green-400"
-              p-2 rounded-xl hover:bg-neutral-900 hover:text-green-500 shadow-xl hover:shadow text-sm  sm:text-lg font-medium uppercase cursor-pointer`}
+            text-red-500"
+              p-2 rounded-xl hover:bg-neutral-900 hover:text-green-500 shadow-2xl hover:shadow text-sm  sm:text-lg cursor-pointer`}
                 onClick={() => {
                   setActive(link.title);
                 }}
               >
-                <a href={`#${link.id}`} className="text-sm text-neutral-400 hover:text-green-400 flex  flex-col items-start">
-
+                <a
+                  href={`#${link.id}`}
+                  className="text-neutral-600  text-[13px] sm:text-[18px] text-center sm:text-left leading-7"
+                >
                   {link.title}
-                <span className="w-1 ml-1 h-1 rounded-full bg-green-400 bg-opacity-20 animate-ping"></span>
-
+                  <span className="w-1 ml-1 h-1 rounded-full bg-lime-500 bg-opacity-20 animate-ping"></span>
                 </a>
               </li>
             ))}
           </ul>
-          <button className="hidden sm:block bg-white hover:bg-green-400 p-2 rounded-lg text-sm text-black uppercase font-semibold">
+          <button className="hidden sm:block bg-lime-400 hover:bg-white p-2 rounded-lg text-xs text-neutral-900 hover:text-red-500 border border-stone-700 uppercase font-semibold">
             <a
               href="https://api.whatsapp.com/send?phone=09065017306"
               className=""
             >
-            
-              {/* <span className="p-2 rounded-full shaodow-xl bg-neutral-900 mr-1 text-green-400  font-mono flex items-center justify-center">
+              {/* <span className="p-2 rounded-full shaodow-xl bg-neutral-900 mr-1 text-red-500  font-mono flex items-center justify-center">
                 <svg 
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -90,9 +94,10 @@ const Navbar = () => {
                   />
                 </svg>
               </span>{" "} */}
-        <span className="text-neutral-900 text-xl"><i className="fa fa-glass" aria-hidden="true"></i></span>   
-Let's talk
-
+              <span className="text-xl">
+                <i className="fa fa-glass mr-1" aria-hidden="true"></i>
+              </span>
+              Let's talk
             </a>
           </button>
         </div>

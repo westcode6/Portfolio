@@ -18,23 +18,27 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <div className="w-full glass-effect">
+          <div className="w-full glass-effect">
+            <Navbar />
 
-        <div className="">
-          <Hero />
-          {/* <StarsCanvas /> */}
-        </div>
-        <About />
+            <div className="glass-effect">
+              <Hero />
+              {/* <StarsCanvas /> */}
+            </div>
+            <About />
 
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
+            <Experience />
+            <Tech />
+            <Works />
+            <Feedbacks />
+            <div className="relative z-0">
+              <Contact />
+              <StarsCanvas />
+            </div>
+            <Footer />
+          </div>
         </div>
-        <Footer />
       </BrowserRouter>
     </>
   );

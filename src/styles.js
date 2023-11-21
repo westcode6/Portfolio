@@ -11,9 +11,9 @@ const styles = {
       "text-gray-gradient lg:text-[22px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[38px] font-medium",
   
     sectionHeadText:
-      "text-neutral-50 font-bold md:text-[40px] sm:text-[50px] xs:text-[40px] text-[30px]",
+      "text-[#FFF9E9] font-bold md:text-[40px] sm:text-[50px] xs:text-[40px] text-[30px]",
     sectionSubText:
-      "sm:text-[18px] text-[14px] text-green-400 font-mono font-normal w-fit py-1  uppercase tracking-wider",
+      "sm:text-[14px] italic text-[14px] text-amber-400 font-thin w-fit py-1  uppercase tracking-wider",
   };
   
   export { styles };
