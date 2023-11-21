@@ -13,9 +13,9 @@ const SectionWrapper = (Component, idName) => function HOC() {
         initial= "hidden"
         whileInView={"show"}
         viewport={{once: true, amount: 0.30}}
-        className={`${styles.padding} w-full glass-effect  md:max-w-7xl mx-auto relative z-0`}
+        className={`${styles.padding} w-full bg-neutral-900  md:max-w-7xl mx-auto relative z-0`}
         >
-            <span className='hash-span py-12 md:py-44' id={idName}>
+            <span className='hash-span py-12 md:py-20' id={idName}>
                 &nbsp;
             </span>
             <Component /> 

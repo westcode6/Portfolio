@@ -13,7 +13,7 @@ const styles = {
     sectionHeadText:
       "text-[#FFF9E9] font-bold md:text-[40px] sm:text-[50px] xs:text-[40px] text-[30px]",
     sectionSubText:
-      "sm:text-[14px] text-[14px] text-neutral-400 font-medium font-mono w-fit py-1  uppercase tracking-wider",
+      "sm:text-[14px] text-[18px] text-neutral-400 font-medium font-mono w-fit py-1  uppercase tracking-wider",
   };
   
   export { styles };

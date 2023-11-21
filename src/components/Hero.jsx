@@ -31,13 +31,13 @@ const Hero = () => {
                   />
                 </div>
 
-                <div className="text-center sm:text-left px-4 sm:pr-10">
+                <div className="text-center sm:text-left sm:pr-10">
                   <p className="mt-1 text-lg font-semibold  text-neutral-600 tracking-tight">
                     Hi, I'm{" "}
                     <span className="text-neutral-400  font-bold">
                       God'spower{" "}
                       <i
-                        className="fa fa-hand-peace-o text-2xl text-yellow-400 animate-bounce"
+                        className="fa fa-hand-peace-o text-2xl text-green-400 animate-bounce"
                         aria-hidden="true"
                       ></i>
                     </span>
@@ -50,7 +50,7 @@ const Hero = () => {
                     {/* <i class="fa fa-camera-retro fa-2x"></i> */}
                   </h1>
 
-                  <p className="my-6 px-6 sm:px-0 sm:pr-20  text-neutral-500  text-[16px] sm:text-[18px] text-center sm:text-left font-medium leading-7">
+                  <p className="my-4 sm:pr-20  text-neutral-500  text-[16px] sm:text-[18px] text-center sm:text-left font-medium leading-7">
                     A Web and UI designer, based in Nigeria, passionate about
                     Solving visual Problems and Enhancing User Experiences
                     {/* I'm a skilled software developer with Experience in
@@ -65,13 +65,13 @@ const Hero = () => {
               </motion.div>
 
               <div className="w-full flex flex-col items-center justify-center sm:items-start">
-                <ul className="list-none flex gap-2 mt-4">
+                <ul className="list-none flex gap-2 px-2  mt-4">
                   {profileLinks.map((link) => (
                     <li
                       key={link.id}
                       className={`
-            text-lime-400"
-              px-2 py-2 rounded-xl  hover:text-lime-500 shadow-inner hover:shadow text-xs font-semibold cursor-pointer`}
+          "
+             hover:shadow text-xs font-semibold cursor-pointer`}
                       onClick={() => {
                         setActive(link.title);
                       }}
@@ -143,7 +143,7 @@ const Hero = () => {
 
         <div className="absolute -bottom-12 xs:bottom-24 w-full flex justify-center items-center">
           <a href="#about">
-            <div className="w-8 h-12 rounded-full border-4 border-white   flex justify-center items-start p-2 cursor-pointer">
+            <div className="w-8 h-12 rounded-full border-4 bg-neutral-800   flex justify-center items-start p-2 cursor-pointer">
               <motion.div
                 animate={{
                   y: [0, 24, 0],

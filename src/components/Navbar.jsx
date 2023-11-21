@@ -8,7 +8,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={`w-full bg-neutral-950 z-10`}>
+    <nav className={`w-full bg-neutral-900 z-10`}>
       <div className="w-full max-w-7xl mx-auto p-2 flex items-center justify-between rounded-b-2xl">
         <div className="">
           <Link
@@ -73,7 +73,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="hidden sm:block bg-neutral-900 hover:bg-white p-2 rounded-lg text-xs text-yellow-400 hover:text-green-500 border border-stone-700 uppercase font-semibold">
+          <button className="hidden sm:block bg-white hover:bg-white p-2 rounded-lg text-xs text-neutral-950  uppercase font-semibold">
             <a
               href="https://api.whatsapp.com/send?phone=09065017306"
               className=""
@@ -95,7 +95,7 @@ const Navbar = () => {
                 </svg>
               </span>{" "} */}
               <span className="text-xl">
-                <i className="fa fa-glass mr-1 text-yellow-300" aria-hidden="true"></i>
+                <i className="fa fa-glass mr-1 " aria-hidden="true"></i>
               </span>
               Let's talk
             </a>

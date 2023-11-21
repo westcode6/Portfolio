@@ -45,7 +45,7 @@ const About = () => {
     <>
       <div
         id="about"
-        className={`w-full  px-4 md:px-0 flex flex-col items-center justify-center text-center`}
+        className={`w-full bg-neutral-900 py-4 rounded-xl px-4 md:px-0 flex flex-col items-center justify-center text-center`}
       >
         {/* NOTE: that every motion effects must be passed as props in the motion tag */}
         <div className="flex flex-col items-center justify-center">
@@ -64,9 +64,7 @@ const About = () => {
 
           
             <h2 className={`${styles.sectionHeadText}`}>
-              <span  className="bg-yellow-400 rounded-b-sm text-neutral-900 px-4 py-2 shadow-xl">
                 Collaborate
-              </span>{" "}
               with brands and agencies to create impactful results
             </h2>
           </motion.div>
