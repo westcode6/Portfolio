@@ -6,6 +6,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 0.8.6rem;
+}
 * {
   margin: 0;
   padding: 0;
@@ -40,8 +43,6 @@ button {
   font-family: "assistance", sans-serif;
 }
 
-
-
 /* THE CUSTOMS STYLES */
 .custom-btn {
   background: linear-gradient(
@@ -56,6 +57,66 @@ button {
 /* body {
   background: "#2222222";
 } */
+
+/*COLOR BACKGROUNDS */
+
+.live-yellow {
+  border: 15px double rgba(100, 100, 100, 1);
+  border-radius: 67px;
+  background: linear-gradient(
+    45deg,
+    rgba(66, 59, 53, 1) 17%,
+    rgba(20, 255, 75, 1) 87%
+  );
+  background-blend-mode: normal;
+  backdrop-filter: blur(48px);
+  -webkit-backdrop-filter: blur(48px);
+}
+
+.text-live-yellow {
+  border: 15px double rgba(100, 100, 100, 1);
+  border-radius: 67px;
+  background: linear-gradient(
+    45deg,
+    rgba(66, 59, 53, 1) 17%,
+    rgba(20, 255, 75, 1) 87%
+  );
+  background-blend-mode: normal;
+  backdrop-filter: blur(48px);
+  -webkit-backdrop-filter: blur(48px);
+color: white !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.live-green {
+  border: 15px double rgba(100, 100, 100, 1);
+  border-radius: 67px;
+  background: linear-gradient(
+    45deg,
+    rgba(10, 7, 5, 1) 17%,
+    rgba(20, 255, 75, 1) 87%
+  );
+  background-blend-mode: normal;
+  backdrop-filter: blur(48px);
+  -webkit-backdrop-filter: blur(48px);
+}
+
+.text-live-green {
+  border: 0px ridge rgba(100, 100, 100, 1);
+  border-radius: 67px;
+  background: linear-gradient(
+    45deg,
+    rgba(187, 255, 161, 1) 12%,
+    rgba(255, 227, 87, 1) 40%
+  );
+  background-blend-mode: normal;
+  backdrop-filter: blur(48px);
+  -webkit-backdrop-filter: blur(48px);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* ======GlassUI */
 .glass-effect {
@@ -167,7 +228,8 @@ button {
   background: linear-gradient(to bottom right, #dbee04 0%, #04f192 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}e
+}
+e
 
 /* canvas- styles */
 .canvas-loader {
@@ -181,11 +243,9 @@ button {
   transform: translateZ(0);
 }
 
-
 .no-scrollbar::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
-
 
 @keyframes mulShdSpin {
   0%,

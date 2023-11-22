@@ -8,9 +8,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={`w-full bg-neutral-900 shadow-2xl rounded-b-2xl z-10`}>
+    <nav className={`w-full bg-neutral-900 shadow-2xl rounded-b-2xl px-4 z-10`}>
       <div className="w-full max-w-7xl mx-auto py-4 flex items-center justify-between rounded-b-2xl">
-        <div className="">
+        <div className="border-2 px-4 py-2 border-neutral-400 rounded-xl live-yellow">
           <Link
             to="/"
             className="flex items-center rounded-xl"
@@ -47,15 +47,15 @@ const Navbar = () => {
 {/* 
           */}
 
-            <p className="text-lg sm:text-2xl -ml-4  flex items-end">
+            <p className="glass-effect rounded-xl  px-2 py-2 text-lg sm:text-2xl -ml-4  flex items-end">
             {/* <span className="text-neutral-400  font-bold">
                       <i
                         className="fa fa-hand-peace-o text-4xl text-green-400"
                         aria-hidden="true"
                       ></i>
                     </span> */}
-           <span className="font-black  text-2xl uppercase text-white tracking-tight">GP</span>
-<span className="text-sm text-green-400 font-bold uppercase">.code</span>
+           <span className="font-black  text-2xl uppercase text-live-yellow tracking-tigh p-1">GP</span>
+<span className="text-sm text-red-500 font-black font-mono uppercase">.code</span>
 
         
             </p>
@@ -63,21 +63,21 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="hidden sm:flex items-center gap-10">
+        <div className="hidden lg:flex items-center gap-10">
           <ul className="list-none flex gap-4 mt-2">
             {navLinks.map((link) => (
               <li
                 key={link.id}
                 className={`
             text-red-500"
-              p-2 rounded-xl hover:bg-neutral-900 hover:text-green-500 shadow-2xl hover:shadow text-sm  sm:text-lg cursor-pointer`}
+              p-2 rounded-xl hover:bg-neutral-900 hover:text-green-500 shadow-2xl hover:shadow text-sm  sm:text-xl cursor-pointer`}
                 onClick={() => {
                   setActive(link.title);
                 }}
               >
                 <a
                   href={`#${link.id}`}
-                  className="text-neutral-600  text-[13px] sm:text-[18px] text-center sm:text-left leading-7"
+                  className="text-neutral-600 font-mono text-[13px] sm:text-[22px] text-center sm:text-left leading-7"
                 >
                   {link.title}
                   <span className="w-1 ml-1 h-1 rounded-full bg-lime-500 bg-opacity-20 animate-ping"></span>
@@ -85,7 +85,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="hidden sm:block bg-white hover:bg-white p-2 rounded-lg text-xs text-neutral-950  uppercase font-semibold">
+          <button className="hidden sm:block text-live-yellow hover:bg-white p-2 rounded-lg text-xs text-neutral-950  uppercase font-semibold">
             <a
               href="https://api.whatsapp.com/send?phone=09065017306"
               className=""
@@ -115,14 +115,15 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Navigation Build */}
-        <div className="sm:hidden flex flex-1 justify-end items-center ">
-          <div className="shadow-2xl glass-effect p-2  rounded-full">
+        <div className="lg:hidden flex flex-1 justify-end items-center ">
+          <div className="w-16  h-16 shadow-2xl live-yellow p-2  rounded-full">
             <img
               src={toggle ? close : menu}
               onClick={() => {
                 setToggle(!toggle);
               }}
               alt={toggle ? "close menu icon" : "menu icon"}
+              className="w-full object-cover object-center "
             />
           </div>
 
