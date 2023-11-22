@@ -32,14 +32,14 @@ const Hero = () => {
                 </div>
 
                 <div className="text-center sm:text-left sm:pr-10">
-                  <p className="mt-1 text-lg font-semibold  text-neutral-600 tracking-tight">
+                  <p className="mt-1 text-lg font-thin  text-neutral-600 tracking-tight">
                     Hi, I'm{" "}
-                    <span className="text-neutral-400  font-bold">
+                    <span className="text-neutral-400  font-thin">
                       God'spower{" "}
-                      <i
-                        className="fa fa-hand-peace-o text-2xl text-green-400 animate-bounce"
+                      {/* <i
+                        className="fa fa-hand-peace-o text-4xl text-green-400 animate-bounce"
                         aria-hidden="true"
-                      ></i>
+                      ></i> */}
                     </span>
                   </p>
                   <h1
@@ -65,33 +65,9 @@ const Hero = () => {
               </motion.div>
 
               <div className="w-full flex flex-col items-center justify-center sm:items-start">
-                <ul className="list-none flex gap-2 px-2  mt-4">
-                  {profileLinks.map((link) => (
-                    <li
-                      key={link.id}
-                      className={`
-          "
-             hover:shadow text-xs font-semibold cursor-pointer`}
-                      onClick={() => {
-                        setActive(link.title);
-                      }}
-                    >
-                      <a
-                        href={`#${link.id}`}
-                        className="text-2xl text-neutral-600 hover:text-lime-400 font-mono flex  items-center space-x-1 justify-center"
-                      >
-                        {/* <span className="w-1 ml-1 h-1 rounded-full bg-lime-400 bg-opacity-20 animate-ping"></span> */}
-                        <span className="text-lg text-neutral-600 w-8 h-8 flex items-center justify-center  rounded-full bg-neutral-900 animate-pulse">
-                          <i className={link.icon}></i>
-                        </span>
-
-                        <span className="text-[14px]">{link.title}</span>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+             
                 <div className="w-full flex items-center justify-center sm:justify-start">
-                  <button className="w-full sm:w-fit mt-10 sm:mt-8 bg-green-500 border border-green-500 text-neutral-900 shadow-xl rounded-xl md:rounded-tr-xl px-6  py-3 text-sm sm:text-base font-mono  font-bold  uppercase flex items-center justify-center gap-2">
+                  <button className="w-full sm:w-fit mt-10 sm:mt-8 bg-green-500 border border-green-500 text-neutral-900 shadow-xl rounded-xl md:rounded-tr-xl px-6  py-3 text-sm sm:text-xl font-mono  font-black   uppercase flex items-center justify-center gap-2">
                     Try me
                     <span className="text-neutral-900">
                       <svg
@@ -124,7 +100,8 @@ const Hero = () => {
                 <div className="glass-effect">
                   <div className="glass-effect">
                     <div className="glass-effect">
-                      <div className="glass-effect">
+                    <svg id="10015.io" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="svg-pattern" x="0" y="0" width="51" height="51" patternUnits="userSpaceOnUse" patternTransform="translate(16, 16) rotate(99) skewX(45)"><svg width="35" height="35" viewBox="0 0 100 100"><g fill="#47ff86" opacity="0.95"><circle cx="72.5" cy="27.5" r="17.5"></circle><circle cx="72.5" cy="72.5" r="17.5"></circle><circle cx="27.5" cy="27.5" r="17.5"></circle><circle cx="27.5" cy="72.5" r="17.5"></circle></g></svg></pattern></defs><rect x="0" y="0" width="100%" height="100%" fill="#17171b"></rect><rect x="0" y="0" width="100%" height="100%" fill="url(#svg-pattern)"></rect></svg>
+                      <div className="glass-effect flex flex-col items-center justify-center">
                         <div className="w-full md:w-96 glass-effect shadow-xl p-6 md:mt-0 rounded-full ">
                           <img
                             src={myProfile}
@@ -132,6 +109,31 @@ const Hero = () => {
                             alt="my gif"
                           />
                         </div>
+                        <ul className="glass-effect p-4 list-none flex gap-4 mt-4">
+                  {profileLinks.map((link) => (
+                    <li
+                      key={link.id}
+                      className={`
+          "
+             hover:shadow text-xs font-semibold cursor-pointer`}
+                      onClick={() => {
+                        setActive(link.title);
+                      }}
+                    >
+                      <a
+                        href={`#${link.id}`}
+                        className="text-2xl text-neutral-600 hover:text-lime-400 font-mono flex  items-center justify-center"
+                      >
+                        {/* <span className="w-1 ml-1 h-1 rounded-full bg-lime-400 bg-opacity-20 animate-ping"></span> */}
+                        <span className="text-lg text-gray-100 w-8 h-8 flex items-center justify-center  rounded-full bg-neutral-900 animate-pulse">
+                          <i className={link.icon}></i>
+                        </span>
+
+                        <span className="text-[14px]">{link.title}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
                       </div>
                     </div>
                   </div>

@@ -8,8 +8,8 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={`w-full bg-neutral-900 z-10`}>
-      <div className="w-full max-w-7xl mx-auto p-2 flex items-center justify-between rounded-b-2xl">
+    <nav className={`w-full bg-neutral-900 shadow-2xl rounded-b-2xl z-10`}>
+      <div className="w-full max-w-7xl mx-auto py-4 flex items-center justify-between rounded-b-2xl">
         <div className="">
           <Link
             to="/"
@@ -19,8 +19,8 @@ const Navbar = () => {
               windows.scrollTo(0, 0);
             }}
           >
-            <span className="text-green-500 text-xl">
-              <svg
+            <span className="text-green-400 text-xl">
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill={`text-red-400`}
                 viewBox="0 0 24 24"
@@ -34,20 +34,32 @@ const Navbar = () => {
                   d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"
                 />
               </svg>
-              
-            </span>{" "}
+               */}
 {/* 
-            <span className="font-medium">
-              <i
-                className="fa fa-hand-peace-o text-4xl bg-green-400 rounded-xl p-1 text-neutral-900"
-                aria-hidden="true"
-              ></i>
-            </span> */}
+               <svg id="10015.io" viewBox="0 0 200 630" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="svg-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse" patternTransform="translate(100, 100) rotate(0) skewX(0)"><svg width="200" height="200" viewBox="0 0 100 100"><g fill="#1bdf76" opacity="1"><path d="M50 2.18557e-06C22.3858 3.39263e-06 9.78513e-07 22.3858 2.18557e-06 50L100 50C100 22.3858 77.6142 9.78513e-07 50 2.18557e-06Z"></path><circle cx="50" cy="75" r="20" transform="rotate(-90 50 75)"></circle></g></svg></pattern></defs><rect x="0" y="0" width="100%" height="100%" fill="#17171b"></rect><rect x="0" y="0" width="100%" height="100%" fill="url(#svg-pattern)"></rect></svg> */}
+            </span>{" "}
 
-            <p className="text-lg sm:text-2xl">
-           <span className="font-black font-mono uppercase tracking-wide">God'spower</span>
-           <span className="font-black text-neutral-500">.dev</span>
+            
+           <div className="w-full flex items-end">
+           <div className="w-16 h-12">
+              <img src="./src/assets/logo/G-logo.png" className="object-cover object-center rounded-2xl shadow-2xl" alt="" />
+            </div>
+{/* 
+          */}
+
+            <p className="text-lg sm:text-2xl -ml-4  flex items-end">
+            {/* <span className="text-neutral-400  font-bold">
+                      <i
+                        className="fa fa-hand-peace-o text-4xl text-green-400"
+                        aria-hidden="true"
+                      ></i>
+                    </span> */}
+           <span className="font-black  text-2xl uppercase text-white tracking-tight">GP</span>
+<span className="text-sm text-green-400 font-bold uppercase">.code</span>
+
+        
             </p>
+           </div>
           </Link>
         </div>
 
