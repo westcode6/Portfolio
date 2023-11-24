@@ -10,7 +10,7 @@ import { mann } from "../assets";
 export const ServiceCard = ({ index, title, icon, desc }) => {
 
   return (
-    <Tilt className="w-full sm:w-[270px] bg-neutral-900  rounded-xl">
+    <Tilt className="w-full sm:w-[270px] glass-effect rounded-xl">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         // animation pattern
@@ -45,7 +45,7 @@ const About = () => {
     <>
       <div
         id="about"
-        className={`w-full bg-neutral-900 py-4 rounded-xl px-4 md:px-0 flex flex-col items-center justify-center text-center`}
+        className={`w-full py-4 rounded-xl px-4 md:px-0 flex flex-col items-center justify-center text-center`}
       >
         {/* NOTE: that every motion effects must be passed as props in the motion tag */}
         <div className="flex flex-col items-center justify-center">

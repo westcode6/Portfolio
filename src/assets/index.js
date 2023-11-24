@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import gLogo from "./Logo/gLogo.png";
 import responsive from "./tech/responsive.png";
 import mobile from "./tech/mobile.png";
 import web from "./tech/web.png";
@@ -36,6 +37,7 @@ import mann from "./mann2.jpg";
 import kidbro from "./kidbro.jpg"
 import sellz from "./sellz.png";
 export {
+  gLogo,
   responsive,
   contentCreator,
   mobile,

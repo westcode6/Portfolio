@@ -26,8 +26,6 @@ body {
 }
 
 h1,
-h2,
-h3,
 h4,
 h5,
 h6 {
@@ -41,6 +39,8 @@ a,
 li,
 button {
   font-family: "assistance", sans-serif;
+  letter-spacing: 0.4px;
+  font-weight: normal normal;
 }
 
 /* THE CUSTOMS STYLES */
@@ -58,8 +58,18 @@ button {
   background: "#2222222";
 } */
 
+.custom-text {
+  text-shadow: 13px -2px 8px rgba(50, 66, 40, 0.9);
+  font: normal normal 16px/1.5 "roboto";
+  letter-spacing: 2px;
+}
+
 /*COLOR BACKGROUNDS */
 
+.live-black {
+  background: #050409 !important;
+
+}
 .live-yellow {
   border: 15px double rgba(100, 100, 100, 1);
   border-radius: 67px;
@@ -74,7 +84,6 @@ button {
 }
 
 .text-live-yellow {
-  border: 15px double rgba(100, 100, 100, 1);
   border-radius: 67px;
   background: linear-gradient(
     45deg,
@@ -84,7 +93,7 @@ button {
   background-blend-mode: normal;
   backdrop-filter: blur(48px);
   -webkit-backdrop-filter: blur(48px);
-color: white !important;
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

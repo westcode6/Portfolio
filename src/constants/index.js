@@ -26,7 +26,7 @@ import {
     whoscore,
     kidbro,
     sellz,
-
+  gLogo,
   } from "../assets";
   
 

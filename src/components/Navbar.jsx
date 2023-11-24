@@ -8,9 +8,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={`w-full bg-neutral-900 shadow-2xl rounded-b-2xl px-4 z-10`}>
-      <div className="w-full max-w-7xl mx-auto py-4 flex items-center justify-between rounded-b-2xl">
-        <div className="border-2 px-4 py-2 border-neutral-400 rounded-xl live-yellow">
+    <nav className={`p-${styles.paddingX} py-3 w-full glass-effect shadow-2xl  z-10`}>
+      <div className="w-full max-w-7xl mx-auto flex items-center justify-between">
+        <div className="rounded-xl">
           <Link
             to="/"
             className="flex items-center rounded-xl"
@@ -19,47 +19,22 @@ const Navbar = () => {
               windows.scrollTo(0, 0);
             }}
           >
-            <span className="text-green-400 text-xl">
-              {/* <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill={`text-red-400`}
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-14 h-14"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"
+            <div className="glass-effect shadow-xl rounded-xl  px-2 py-2 text-lg sm:text-2xl   flex items-end">
+              <div className="w-14 h-12">
+                <img
+                  src="./src/assets/Logo/gLogo.png"
+                  className="object-cover object-center"
+                  alt=""
                 />
-              </svg>
-               */}
-{/* 
-               <svg id="10015.io" viewBox="0 0 200 630" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="svg-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse" patternTransform="translate(100, 100) rotate(0) skewX(0)"><svg width="200" height="200" viewBox="0 0 100 100"><g fill="#1bdf76" opacity="1"><path d="M50 2.18557e-06C22.3858 3.39263e-06 9.78513e-07 22.3858 2.18557e-06 50L100 50C100 22.3858 77.6142 9.78513e-07 50 2.18557e-06Z"></path><circle cx="50" cy="75" r="20" transform="rotate(-90 50 75)"></circle></g></svg></pattern></defs><rect x="0" y="0" width="100%" height="100%" fill="#17171b"></rect><rect x="0" y="0" width="100%" height="100%" fill="url(#svg-pattern)"></rect></svg> */}
-            </span>{" "}
+              </div>
 
-            
-           <div className="w-full flex items-end">
-           <div className="w-16 h-12">
-              <img src="./src/assets/logo/G-logo.png" className="object-cover object-center rounded-2xl shadow-2xl" alt="" />
+              <p className="-ml-2 font-black  text-2xl uppercase text-live-yellow tracking-tight">
+                GP
+              </p>
+              <span className="text-sm text-live-yellow font-semibold font-sans uppercase animate-pulse">
+                .code
+              </span>
             </div>
-{/* 
-          */}
-
-            <p className="glass-effect rounded-xl  px-2 py-2 text-lg sm:text-2xl -ml-4  flex items-end">
-            {/* <span className="text-neutral-400  font-bold">
-                      <i
-                        className="fa fa-hand-peace-o text-4xl text-green-400"
-                        aria-hidden="true"
-                      ></i>
-                    </span> */}
-           <span className="font-black  text-2xl uppercase text-live-yellow tracking-tigh p-1">GP</span>
-<span className="text-sm text-red-500 font-black font-mono uppercase">.code</span>
-
-        
-            </p>
-           </div>
           </Link>
         </div>
 
@@ -69,23 +44,23 @@ const Navbar = () => {
               <li
                 key={link.id}
                 className={`
-            text-red-500"
-              p-2 rounded-xl hover:bg-neutral-900 hover:text-green-500 shadow-2xl hover:shadow text-sm  sm:text-xl cursor-pointer`}
+            "px-4 py-2 rounded-xl hover:underline hover:text-green-500 shadow-2xl hover:shadow text-sm  sm:text-base cursor-pointer`}
                 onClick={() => {
                   setActive(link.title);
                 }}
               >
+
                 <a
                   href={`#${link.id}`}
-                  className="text-neutral-600 font-mono text-[13px] sm:text-[22px] text-center sm:text-left leading-7"
+                  className="cursor-pointer p-1 rounded-2xl font-mono text-neutral-600/90"
                 >
                   {link.title}
-                  <span className="w-1 ml-1 h-1 rounded-full bg-lime-500 bg-opacity-20 animate-ping"></span>
+                  <span className="w-1 ml-1 h-1 rounded-full bg-lime-500 bg-opacity-70 animate-ping"></span>
                 </a>
               </li>
             ))}
           </ul>
-          <button className="hidden sm:block text-live-yellow hover:bg-white p-2 rounded-lg text-xs text-neutral-950  uppercase font-semibold">
+          <button className="hidden sm:block text-live-yellow hover:bg-white p-2 rounded-lg text-xs text-neutral-950 animate-pulse uppercase font-semibold">
             <a
               href="https://api.whatsapp.com/send?phone=09065017306"
               className=""
@@ -107,7 +82,7 @@ const Navbar = () => {
                 </svg>
               </span>{" "} */}
               <span className="text-xl">
-                <i className="fa fa-glass mr-1 " aria-hidden="true"></i>
+                <i className="fa fa-glass  mr-1 " aria-hidden="true"></i>
               </span>
               Let's talk
             </a>
