@@ -55,10 +55,10 @@ const Hero = () => {
         </div>
 
         <main
-          className={`px-6  md:px-16 lg:px-32 py-6 w-full 
+          className={`px-3  md:px-16 lg:px-32 py-6 w-full 
         h-[105vh] lg:h-[90vh]`}
         >
-          <header className="w-inherit h-inherit flex flex-col lg:flex-row p-2 sm:p-6">
+          <header className="w-inherit h-inherit flex flex-col lg:flex-row sm:p-6">
             <div className="w-full md:max-w-1/2 flex flex-col items-center">
               <motion.div
                 className="w-full"
