@@ -45,7 +45,7 @@ const About = () => {
     <>
       <div
         id="about"
-        className={`w-full py-4 rounded-xl px-4 md:px-0 flex flex-col items-center justify-center text-center`}
+        className={`w-full hero-glass-effect py-4 rounded-xl px-4 md:px-0 flex flex-col items-center justify-center text-center`}
       >
         {/* NOTE: that every motion effects must be passed as props in the motion tag */}
         <div className="flex flex-col items-center justify-center">

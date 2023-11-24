@@ -20,9 +20,10 @@ const App = () => {
       <BrowserRouter>
         <div className="w-full glass-effect">
           <div className="w-full glass-effect">
+
+            <div className="w-full bg-hero-img">
             <Navbar />
 
-            <div className="glass-effect">
               <Hero />
               {/* <StarsCanvas /> */}
             </div>

@@ -8,7 +8,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={`p-${styles.paddingX} py-3 w-full glass-effect shadow-2xl  z-10`}>
+    <nav className={`p-${styles.paddingX} py-3 w-full bg-transparent shadow-2xl  z-10`}>
       <div className="w-full max-w-7xl mx-auto flex items-center justify-between">
         <div className="rounded-xl">
           <Link
@@ -26,6 +26,9 @@ const Navbar = () => {
                   className="object-cover object-center"
                   alt=""
                 />
+                <span>
+
+                </span>
               </div>
 
               <p className="-ml-2 font-black  text-2xl uppercase text-live-yellow tracking-tight">

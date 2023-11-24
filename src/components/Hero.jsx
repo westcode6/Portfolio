@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <>
       {/* <StarsCanvas /> */}
-      <div className="w-full">
+      <div className="w-full hero-glass-effect">
         <div
           className={`p-${styles.paddingX} hidden px-4 sm:px-0 py-2 mb-16  md:py-24 flex-col-reverse  lg:flex-row  w-full max-w-7xl mx-auto`}
         >
@@ -54,22 +54,19 @@ const Hero = () => {
           </section>
         </div>
 
-
-
-
-        <main className={`px-6  md:px-16 lg:px-32 py-6 w-full 
-        h-[100vh] lg:h-[90vh]`}>
-          <header className="w-inherit h-inherit flex flex-col lg:flex-row p-6">
+        <main
+          className={`px-6  md:px-16 lg:px-32 py-6 w-full 
+        h-[105vh] lg:h-[90vh]`}
+        >
+          <header className="w-inherit h-inherit flex flex-col lg:flex-row p-2 sm:p-6">
             <div className="w-full md:max-w-1/2 flex flex-col items-center">
               <motion.div
                 className="w-full"
                 variants={textVariant()}
                 // textVariant() method is used to animate the texts
                 // the vairiants prop is used to define what kind of motion effect you wish to apply
-
-
               >
-                <div className="block sm:hidden w-24  md:w-96 mx-auto md:h-80  md:mt-0 rounded-full">
+                <div className="block sm:hidden w-16  md:w-96 mx-auto md:h-80  md:mt-0 rounded-full">
                   <img
                     src={myProfile}
                     className="w-full h-full object-cover shadow-2xl  border-8  border-neutral-900 rounded-full"
@@ -77,17 +74,14 @@ const Hero = () => {
                   />
                 </div>
 
-                <div className="w-full  text-center sm:text-left mt-4 sm:pr-10">
-                  <div className="flex items-center justify-center">
-                  <p className="text-xl font-mono text-neutral-600">
-                    Hi,
-                  
-                  </p>
-                  <span className="text-2xl animate-bounce">👀</span>{" "}
-                  <span className="font-thin text-neutral-600/90 font-mono text-lg">
-                   I'm God'spower
-                  </span>
-                  </div>
+                <div className="w-full text-center sm:text-left mt-4 sm:pr-10">
+                  <div className="w-full flex items-center justify-center lg:justify-start">
+                    <p className="text-xl font-mono text-neutral-500">Hi,</p>
+                    <span className="text-2xl text-neutral-600"> I'm 👀</span>{" "} 
+                    
+                    
+                    <p className="px-2 text-2xl font-thin  text-white animate-pulse">God'spower</p>
+                    </div>
                   <h1
                     id=""
                     className="mt-4 text-5xl sm:text-5xl md:text-[62px] font-black text-white text-center sm:text-left"
@@ -108,12 +102,12 @@ const Hero = () => {
                       ideas to life! */}
                   </p>
                   <div className="w-full flex flex-col-reverse md:flex-row items-center justify-center sm:justify-start md:gap-10">
-                  <button className="w-full sm:w-fit mt-5 sm:mt-8 live-yellow  text-live-yellow transform transition hover:-translate-x-4 shadow-xl rounded-full md:rounded-tl-xl px-6  py-4 text-2xl sm:text-xl animate-pulse font-black uppercase flex items-center justify-center gap-2">
-                    <a
-                      href="https://api.whatsapp.com/send?phone=09065017306"
-                      className=""
-                    >
-                      {/* <span className="p-2 rounded-full shaodow-xl bg-neutral-900 mr-1 text-red-500  font-mono flex items-center justify-center">
+                    <button className="w-full sm:w-fit mt-5 sm:mt-8 live-yellow  text-live-yellow transform transition hover:-translate-x-4 shadow-xl rounded-full md:rounded-tl-xl px-6  py-4 text-2xl sm:text-xl animate-pulse font-black uppercase flex items-center justify-center gap-2">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=09065017306"
+                        className=""
+                      >
+                        {/* <span className="p-2 rounded-full shaodow-xl bg-neutral-900 mr-1 text-red-500  font-mono flex items-center justify-center">
                 <svg 
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -129,21 +123,38 @@ const Hero = () => {
                   />
                 </svg>
               </span>{" "} */}
-                      <span className="text-2xl">
-                        <i className="fa fa-glass mr-1 " aria-hidden="true"></i>
-                      </span>
-                      Let's talk
-                    </a>
-                  </button>
+                        <span className="text-2xl">
+                          <i
+                            className="fa fa-glass mr-1 "
+                            aria-hidden="true"
+                          ></i>
+                        </span>
+                        Let's talk
+                      </a>
+                    </button>
 
-                <div className="w-fit py-2 flex items-center gap-2 lg:flex-col">
-                <button className="text-neutral-600 font-mono font-thin text-sm flex items-center lg:pt-6"> <span className="text-2xl text-live-yellow">
-                        <i className="fa fa-phone mr-3" aria-hidden="true"></i>
-                      </span> 09065017306</button>
-                      <button className="text-neutral-600 font-mono font-thin text-sm flex items-center py-2"> <span className="text-2xl text-live-yellow">
-                        <i className="fa fa-whatsapp mr-3 " aria-hidden="true"></i>
-                      </span> 09065017306</button>
-                </div>
+                    <div className="w-fit py-2 flex items-center gap-2 lg:flex-col">
+                      <button className="text-neutral-600 font-mono font-thin text-sm flex items-center lg:pt-6">
+                        {" "}
+                        <span className="text-2xl text-live-yellow">
+                          <i
+                            className="fa fa-phone mr-3"
+                            aria-hidden="true"
+                          ></i>
+                        </span>{" "}
+                        09065017306
+                      </button>
+                      <button className="text-neutral-600 font-mono font-thin text-sm flex items-center py-2">
+                        {" "}
+                        <span className="text-2xl text-live-yellow">
+                          <i
+                            className="fa fa-whatsapp mr-3 "
+                            aria-hidden="true"
+                          ></i>
+                        </span>{" "}
+                        09065017306
+                      </button>
+                    </div>
                   </div>
                 </div>
               </motion.div>

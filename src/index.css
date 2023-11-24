@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 html {
-  font-size: 0.8.6rem;
+  font-size: 0.98rem;
 }
 * {
   margin: 0;
@@ -39,11 +39,19 @@ a,
 li,
 button {
   font-family: "assistance", sans-serif;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.8px;
   font-weight: normal normal;
 }
 
 /* THE CUSTOMS STYLES */
+
+.bg-hero-img {
+  background-image: url(/src/assets/black-pattern1.jpg) !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .custom-btn {
   background: linear-gradient(
     45deg,
@@ -54,21 +62,28 @@ button {
   );
 }
 
-/* body {
-  background: "#2222222";
-} */
-
 .custom-text {
   text-shadow: 13px -2px 8px rgba(50, 66, 40, 0.9);
   font: normal normal 16px/1.5 "roboto";
   letter-spacing: 2px;
 }
 
+.branded {
+
+  background: #edde5d;
+  background: -webkit-linear-gradient(44deg, #edde5d 0%, #f09819 100%);
+
+
+  -webkit-backdrop-filter: blur(48px);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*COLOR BACKGROUNDS */
 
 .live-black {
   background: #050409 !important;
-
 }
 .live-yellow {
   border: 15px double rgba(100, 100, 100, 1);
@@ -135,68 +150,107 @@ button {
   border: none;
 }
 
-/*=======Glitch Effect =====*/
+.hero-glass-effect {
+  background: rgba(16, 16, 16, 0.788);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border: none;
+}
+
 .glitch-wrapper {
-  /* background-color: #222; */
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* background-color: transparent; */
 }
 
 .glitch {
   position: relative;
+  font-size: 22px;
+  font-weight: 700;
   line-height: 1.2;
   color: #fff;
-  letter-spacing: 7px;
+  letter-spacing: 4px;
   z-index: 1;
 }
 
-.glitch:before,
-.glitch:after {
-  display: block;
+.glitch:before {
   content: attr(data-glitch);
   position: absolute;
   top: 0;
-  left: 0;
-  opacity: 2;
-}
-
-.glitch:before {
-  animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
-    infinite;
-  color: #ffffff;
-  z-index: -1;
+  left: -2px;
+  width: 100%;
+  color: #fff;
+  background-color: #222;
+  overflow: hidden;
+  clip: rect(0, 100px, 0, 0);
+  animation: noise-before 3s infinite linear alternate-reverse;
 }
 
 .glitch:after {
-  animation: glitch-color 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
-    infinite;
-  color: #afd601;
-  z-index: -2;
+  content: attr(data-glitch);
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: 100%;
+  color: #fff;
+  background-color: #222;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-after 2s infinite linear alternate-reverse;
 }
 
-@keyframes glitch-color {
+@keyframes noise-before {
   0% {
-    transform: translate(0);
+    clip: rect(61px, 9999px, 52px, 0);
   }
 
-  20% {
-    transform: translate(-10px, 3px);
+  25% {
+    clip: rect(34px, 9999px, 42px, 0);
   }
 
-  40% {
-    transform: translate(-3px, -3px);
+  50% {
+    clip: rect(147px, 9999px, 179px, 0);
   }
 
-  60% {
-    transform: translate(10px, 2px);
+  75% {
+    clip: rect(99px, 9999px, 63px, 0);
   }
 
-  80% {
-    transform: translate(3px, -3px);
+  100% {
+    clip: rect(188px, 9999px, 122px, 0);
   }
 
-  to {
-    transform: translate(0);
-  }
 }
+
+@keyframes noise-after {
+  0% {
+    clip: rect(26px, 9999px, 33px, 0);
+  }
+
+  25% {
+    clip: rect(140px, 9999px, 198px, 0);
+  }
+
+  50% {
+    clip: rect(184px, 9999px, 89px, 0);
+  }
+
+  75% {
+    clip: rect(121px, 9999px, 6px, 0);
+  }
+
+  100% {
+    clip: rect(181px, 9999px, 99px, 0);
+  }
+
+  
+}
+
+
 
 /* =====GRADIENT COLORS===== */
 .green-gradient {
